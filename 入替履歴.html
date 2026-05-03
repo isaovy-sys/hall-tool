@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>入替履歴管理</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Meiryo','メイリオ',sans-serif;background:#f4f6f9;font-size:14px;color:#1e293b}
+h1{background:#1a3a5c;color:#fff;padding:13px 18px;font-size:15px;display:flex;align-items:center;justify-content:space-between}
+h1 span{font-size:11px;color:#94b8d8;font-weight:normal}
+
+.tabs{display:flex;flex-wrap:wrap;gap:4px;padding:10px 14px 0;background:#1a3a5c}
+.tab-btn{padding:7px 14px;border:none;border-radius:6px 6px 0 0;cursor:pointer;font-size:12px;font-family:inherit;font-weight:bold;background:#2d5f8a;color:#cde;white-space:nowrap}
+.tab-btn.active{background:#f4f6f9;color:#1a3a5c}
+.tab-btn.all{background:#4a1a5c;color:#e0c8f0}
+.tab-btn.all.active{background:#f4f6f9;color:#4a1a5c}
+.content{padding:14px}
+
+/* カード共通 */
+.card{background:#fff;border-radius:10px;padding:14px;margin-bottom:16px;border:2px solid #e2e8f0}
+.card-title{font-size:13px;font-weight:bold;color:#1a3a5c;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+
+/* スナップショット状態 */
+.snap-status{display:flex;align-items:center;gap:8px;padding:8px 12px;background:#f8fafc;border-radius:8px;margin-bottom:12px;font-size:12px}
+.snap-dot{width:10px;height:10px;border-radius:50%}
+.snap-dot.ok{background:#22a06b}
+.snap-dot.none{background:#94a3b8}
+.snap-label{color:#64748b}
+.snap-date{font-weight:bold;color:#1a3a5c}
+.open-pw-btn{margin-left:auto;padding:5px 12px;background:#1a3a5c;color:#fff;border:none;border-radius:5px;cursor:pointer;font-size:11px;font-family:inherit}
+.open-pw-btn:hover{background:#2d5f8a}
+
+/* 入替検出エリア */
+.detect-area{background:#eff6ff;border:2px solid #93c5fd;border-radius:8px;padding:12px;margin-bottom:14px}
+.detect-title{font-size:12px;font-weight:bold;color:#1d4ed8;margin-bottom:8px}
+.detect-msg{font-size:12px;color:#475569;line-height:1.7}
+.detect-msg code{background:#dbeafe;padding:2px 6px;border-radius:4px;color:#1e40af;font-size:11px}
+
+/* 新台台数入力 */
+.new-machines-area{margin-bottom:14px}
+.nm-title{font-size:12px;font-weight:bold;color:#15803d;margin-bottom:8px;padding:6px 10px;background:#f0fdf4;border-radius:6px;border-left:3px solid #22a06b}
+.nm-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #f1f5f9}
+.nm-name{flex:1;font-size:13px;color:#1e293b}
+.nm-type{font-size:11px;padding:2px 6px;border-radius:10px;font-weight:bold}
+.nm-type.P{background:#dbeafe;color:#1d4ed8}
+.nm-type.S{background:#fef9c3;color:#854d0e}
+.nm-count{width:65px;text-align:center;padding:5px;border:1px solid #86efac;border-radius:4px;font-size:14px;font-weight:bold;font-family:inherit;background:#f0fdf4}
+.nm-count:focus{outline:none;border-color:#16a34a}
+.nm-unit{font-size:12px;color:#64748b}
+
+/* 撤去エリア */
+.removed-area{margin-bottom:14px}
+.rm-title{font-size:12px;font-weight:bold;color:#dc2626;margin-bottom:8px;padding:6px 10px;background:#fff5f5;border-radius:6px;border-left:3px solid #dc2626}
+.rm-tags{display:flex;flex-wrap:wrap;gap:5px}
+.rm-tag{display:flex;align-items:center;gap:4px;background:#fee2e2;color:#dc2626;border:1px solid #fca5a5;padding:3px 10px;border-radius:16px;font-size:12px;font-weight:bold}
+.rm-tag button{background:none;border:none;cursor:pointer;color:#dc2626;opacity:.6;font-size:13px}
+.rm-tag button:hover{opacity:1}
+
+/* 日付・メモ */
+.meta-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.meta-row label{font-size:12px;color:#64748b;font-weight:bold;white-space:nowrap}
+.meta-row input[type=date],.meta-row select,.meta-row input[type=text]{padding:6px 10px;border:1px solid #b0c8e8;border-radius:6px;font-size:12px;font-family:inherit}
+.meta-row input[type=text]{flex:1;min-width:120px}
+
+/* ボタン */
+.btn-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.btn-reg{padding:8px 20px;background:#1a3a5c;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit;font-weight:bold}
+.btn-save{padding:8px 16px;background:#2d7dd2;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px;font-family:inherit;font-weight:bold}
+.ok-msg{font-size:12px;color:#22a06b;font-weight:bold;display:none}
+.empty-hint{color:#94a3b8;font-size:12px;font-style:italic}
+
+/* 履歴 */
+.hist-wrap{display:flex;flex-direction:column;gap:10px}
+.rec{background:#fff;border-radius:10px;overflow:hidden;border:1px solid #e2e8f0}
+.rec-head{display:flex;align-items:center;gap:8px;padding:8px 14px;background:#f0f6ff;border-bottom:1px solid #e2e8f0;flex-wrap:wrap}
+.rec-date{font-size:14px;font-weight:bold;color:#1a3a5c}
+.rec-store{font-size:11px;color:#fff;padding:2px 10px;border-radius:10px}
+.rec-del{margin-left:auto;background:none;border:none;cursor:pointer;color:#94a3b8;font-size:15px}
+.rec-del:hover{color:#dc2626}
+.rec-body{display:grid;grid-template-columns:1fr 1fr;padding:10px 14px;gap:10px}
+.rec-sec h5{font-size:11px;font-weight:bold;margin-bottom:5px}
+.rec-sec.in h5{color:#15803d}
+.rec-sec.out h5{color:#dc2626}
+.badge-in{display:inline-block;background:#dcfce7;color:#15803d;border:1px solid #86efac;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:bold;margin:2px}
+.badge-out{display:inline-block;background:#fee2e2;color:#dc2626;border:1px solid #fca5a5;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:bold;margin:2px}
+
+/* フィルター */
+.filter-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center}
+.filter-row select,.filter-row input{padding:6px 10px;border:1px solid #b0c8e8;border-radius:6px;font-size:12px;font-family:inherit}
+</style>
+</head>
+<body>
+<h1>🔄 入替履歴管理 <span>機種名自動検出 ／ 台数だけ入力</span></h1>
+<div class="tabs" id="tabs"></div>
+<div class="content" id="content"></div>
+
+<script>
+// ─── 店舗設定 ──────────────────────────────────
+const STORES = [
+  {id:'maruhan_fukui',  name:'マルハン福井',   url:'https://www.p-world.co.jp/fukui/maruhan-fukui.htm',       color:'#dc2626'},
+  {id:'maruhan_owada',  name:'マルハン大和田',  url:'https://www.p-world.co.jp/fukui/maruhan-fukuiowada.htm', color:'#f59e0b'},
+  {id:'jungle',         name:'ジャングル',      url:'https://www.p-world.co.jp/fukui/jungle1000.htm',         color:'#16a34a'},
+  {id:'quattro',        name:'クアトロ開発',    url:'https://www.p-world.co.jp/fukui/quatro-kaihotsu.htm',    color:'#8b5cf6'},
+  {id:'usa',            name:'自店（USA）',     url:null, color:'#2d7dd2'},
+  {id:'jikan',          name:'自館',            url:null, color:'#0ea5e9'},
+];
+
+// ─── 状態 ─────────────────────────────────────
+let records   = [];
+let snapshots = {};
+// pending: {storeId: {newMachines:[{name,type}], removedMachines:[{name}], date}}
+let pending   = {};
+let currentTab = 0;
+
+function load() {
+  const r = localStorage.getItem('ir_records_v3');
+  records = r ? JSON.parse(r) : [];
+  const s = localStorage.getItem('ir_snapshots_v3');
+  snapshots = s ? JSON.parse(s) : {};
+}
+function save() {
+  localStorage.setItem('ir_records_v3', JSON.stringify(records));
+  localStorage.setItem('ir_snapshots_v3', JSON.stringify(snapshots));
+  document.querySelectorAll('.ok-msg').forEach(e=>{e.style.display='inline';setTimeout(()=>e.style.display='none',2000)});
+}
+function today(){ return new Date().toISOString().slice(0,10); }
+
+// ─── ★ Claude が呼ぶ関数 ★ ─────────────────────
+/**
+ * P-WORLDの最新機種リストを受け取り、前回スナップと比較して
+ * 新台・撤去を自動セットする。
+ * @param {string} storeId
+ * @param {Array}  machines  [{name, type, rate, isNew}]
+ */
+window.detectChanges = function(storeId, machines) {
+  const snap = snapshots[storeId];
+  let newMachines, removedMachines;
+
+  if (snap) {
+    const oldSet = new Set(snap.machines.map(m=>m.name));
+    const newSet = new Set(machines.map(m=>m.name));
+    newMachines     = machines.filter(m => !oldSet.has(m.name));
+    removedMachines = snap.machines.filter(m => !newSet.has(m.name));
+  } else {
+    // 初回：P-WORLDのisNew=trueを新台として扱う
+    newMachines     = machines.filter(m => m.isNew);
+    removedMachines = [];
+  }
+
+  pending[storeId] = {
+    date: today(),
+    allMachines: machines,
+    newMachines,
+    removedMachines,
+  };
+
+  // スナップショットを更新
+  snapshots[storeId] = { date: today(), machines };
+  localStorage.setItem('ir_snapshots_v3', JSON.stringify(snapshots));
+
+  const si = STORES.findIndex(s=>s.id===storeId);
+  if (si >= 0 && currentTab === si) render(si);
+
+  return {
+    store: storeId,
+    newCount: newMachines.length,
+    removedCount: removedMachines.length,
+    new: newMachines.map(m=>m.name),
+    removed: removedMachines.map(m=>m.name),
+  };
+};
+
+// ─── レンダリング ─────────────────────────────
+function render(tab) {
+  if (tab !== undefined) currentTab = tab;
+  const tabsEl = document.getElementById('tabs');
+  tabsEl.innerHTML = '';
+  STORES.forEach((s,i)=>{
+    const b = document.createElement('button');
+    b.className = 'tab-btn'+(i===currentTab?' active':'');
+    b.textContent = s.name;
+    b.onclick = ()=>render(i);
+    tabsEl.appendChild(b);
+  });
+  const ab = document.createElement('button');
+  ab.className = 'tab-btn all'+(currentTab===99?' active':'');
+  ab.textContent = '📊 全店舗';
+  ab.onclick = ()=>render(99);
+  tabsEl.appendChild(ab);
+
+  const c = document.getElementById('content');
+  c.innerHTML = '';
+  const p = document.createElement('div');
+  p.className = 'panel active';
+  currentTab === 99 ? renderAll(p) : renderStore(p, currentTab);
+  c.appendChild(p);
+}
+
+// ─── 各店舗パネル ─────────────────────────────
+function renderStore(panel, si) {
+  const store   = STORES[si];
+  const snap    = snapshots[store.id];
+  const pend    = pending[store.id];
+
+  // スナップショット状態
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `<div class="card-title">📡 P-WORLD スナップショット</div>`;
+
+  const statusDiv = document.createElement('div');
+  statusDiv.className = 'snap-status';
+  statusDiv.innerHTML = snap
+    ? `<div class="snap-dot ok"></div><span class="snap-label">最終取得：</span><span class="snap-date">${snap.date}（${snap.machines.length}機種）</span>`
+    : `<div class="snap-dot none"></div><span class="snap-label" style="color:#dc2626">スナップショット未取得</span>`;
+  if (store.url) {
+    const btn = document.createElement('button');
+    btn.className = 'open-pw-btn';
+    btn.textContent = 'P-WORLDを開く 🔗';
+    btn.onclick = ()=>window.open(store.url,'_blank');
+    statusDiv.appendChild(btn);
+  }
+  card.appendChild(statusDiv);
+
+  // 検出依頼の説明
+  const da = document.createElement('div');
+  da.className = 'detect-area';
+  da.innerHTML = `<div class="detect-title">🤖 Claudeへの依頼方法</div>
+    <div class="detect-msg">
+      入替があったら：<br>
+      <code>「${store.name}の入替を検出して」</code> と送信するだけ！<br>
+      → Claude が P-WORLD を確認して 新台・撤去 を自動検出。<br>
+      → あとは台数を入力して登録するだけです。
+    </div>`;
+  card.appendChild(da);
+
+  // 検出済みデータがあれば台数入力フォームを表示
+  if (pend) {
+    // 日付・種別・メモ
+    const metaRow = document.createElement('div');
+    metaRow.className = 'meta-row';
+    metaRow.innerHTML = `
+      <label>入替日</label><input type="date" id="dt-${si}" value="${pend.date}">
+      <label>種別</label>
+      <select id="tp-${si}">
+        <option>パチンコ</option><option>スロット</option><option>パチンコ＋スロット</option>
+      </select>
+      <input type="text" id="mm-${si}" placeholder="メモ（任意）">
+    `;
+    card.appendChild(metaRow);
+
+    // 新台リスト（台数入力）
+    if (pend.newMachines.length > 0) {
+      const nma = document.createElement('div');
+      nma.className = 'new-machines-area';
+      nma.innerHTML = `<div class="nm-title">✅ 新台 ${pend.newMachines.length}機種 ── 台数を入力してください</div>`;
+      pend.newMachines.forEach((m,i)=>{
+        const row = document.createElement('div');
+        row.className = 'nm-row';
+        row.innerHTML = `
+          <span class="nm-name">${m.name}</span>
+          <span class="nm-type ${m.type||'P'}">${m.type==='S'?'スロット':'パチンコ'}</span>
+          <input type="number" class="nm-count" id="nc-${si}-${i}" value="" min="0" placeholder="0">
+          <span class="nm-unit">台</span>
+        `;
+        nma.appendChild(row);
+      });
+      card.appendChild(nma);
+    } else {
+      card.insertAdjacentHTML('beforeend','<p class="empty-hint" style="margin-bottom:10px">新台なし（スナップショット更新のみ）</p>');
+    }
+
+    // 撤去リスト（自動検出・編集可能）
+    const rma = document.createElement('div');
+    rma.className = 'removed-area';
+    rma.innerHTML = `<div class="rm-title">❌ 撤去 ${pend.removedMachines.length}機種（自動検出）</div>`;
+    const rmTags = document.createElement('div');
+    rmTags.className = 'rm-tags';
+    rmTags.id = `rmtags-${si}`;
+    if (pend.removedMachines.length === 0) {
+      rmTags.innerHTML = '<span class="empty-hint">撤去機種なし</span>';
+    } else {
+      renderRmTags(si, rmTags);
+    }
+    rma.appendChild(rmTags);
+    card.appendChild(rma);
+
+    // 登録ボタン
+    const btnRow = document.createElement('div');
+    btnRow.className = 'btn-row';
+    const regBtn = document.createElement('button');
+    regBtn.className = 'btn-reg'; regBtn.textContent = '📌 登録';
+    regBtn.onclick = ()=>registerRecord(si);
+    const saveBtn = document.createElement('button');
+    saveBtn.className = 'btn-save'; saveBtn.textContent = '💾 保存';
+    saveBtn.onclick = save;
+    const okMsg = document.createElement('span');
+    okMsg.className = 'ok-msg'; okMsg.textContent = '✅ 保存完了';
+    btnRow.append(regBtn, saveBtn, okMsg);
+    card.appendChild(btnRow);
+  }
+
+  panel.appendChild(card);
+
+  // 履歴
+  const recs = records.filter(r=>r.storeId===store.id).sort((a,b)=>b.date.localeCompare(a.date));
+  const ht = document.createElement('h3');
+  ht.style.cssText='font-size:13px;color:#1a3a5c;margin-bottom:10px';
+  ht.textContent = `📜 ${store.name} の入替履歴（${recs.length}件）`;
+  panel.appendChild(ht);
+  const hw = document.createElement('div');
+  hw.className = 'hist-wrap';
+  if (!recs.length) hw.innerHTML='<p style="color:#94a3b8;font-size:13px">まだ記録なし</p>';
+  else recs.forEach(r=>hw.appendChild(buildRecCard(r,false)));
+  panel.appendChild(hw);
+}
+
+function renderRmTags(si, div) {
+  const pend = pending[STORES[si].id];
+  if (!pend) return;
+  div.innerHTML = '';
+  pend.removedMachines.forEach((m,i)=>{
+    const t = document.createElement('span'); t.className='rm-tag';
+    t.innerHTML = `${m.name} <button onclick="rmMachine(${si},${i})">×</button>`;
+    div.appendChild(t);
+  });
+}
+
+window.rmMachine = function(si, idx) {
+  const pend = pending[STORES[si].id];
+  if (!pend) return;
+  pend.removedMachines.splice(idx,1);
+  const div = document.getElementById(`rmtags-${si}`);
+  if (div) renderRmTags(si, div);
+};
+
+function registerRecord(si) {
+  const store = STORES[si];
+  const pend  = pending[store.id];
+  if (!pend) return;
+  const dt = document.getElementById(`dt-${si}`)?.value || today();
+  const tp = document.getElementById(`tp-${si}`)?.value || 'パチンコ';
+  const mm = document.getElementById(`mm-${si}`)?.value.trim() || '';
+
+  // 台数を収集
+  const inList = pend.newMachines.map((m,i)=>{
+    const val = document.getElementById(`nc-${si}-${i}`)?.value;
+    return {name:m.name, type:m.type, count:Number(val)||0};
+  });
+
+  records.push({
+    id: Date.now(),
+    storeId: store.id,
+    storeName: store.name,
+    color: store.color,
+    date: dt,
+    type: tp,
+    memo: mm,
+    in: inList,
+    out: [...pend.removedMachines],
+  });
+  delete pending[store.id];
+  save();
+  render(si);
+}
+
+function deleteRecord(id) {
+  if (!confirm('削除しますか？')) return;
+  records = records.filter(r=>r.id!==id);
+  save(); render(currentTab);
+}
+window.deleteRecord = deleteRecord;
+
+function buildRecCard(rec, showStore) {
+  const card = document.createElement('div'); card.className='rec';
+  const head = document.createElement('div'); head.className='rec-head';
+  head.innerHTML = `
+    <span class="rec-date">📅 ${rec.date}</span>
+    ${showStore?`<span class="rec-store" style="background:${rec.color}">${rec.storeName}</span>`:''}
+    <span style="font-size:11px;color:#64748b">${rec.type}</span>
+    ${rec.memo?`<span style="font-size:11px;color:#64748b">💬${rec.memo}</span>`:''}
+    <button class="rec-del" onclick="deleteRecord(${rec.id})">🗑</button>
+  `;
+  card.appendChild(head);
+  const body = document.createElement('div'); body.className='rec-body';
+
+  // 導入
+  const inSec = document.createElement('div'); inSec.className='rec-sec in';
+  const inCount = rec.in.reduce((s,m)=>s+(m.count||0),0);
+  inSec.innerHTML = `<h5>✅ 導入 ${rec.in.length}機種 / ${inCount}台</h5>`;
+  const inT = document.createElement('div');
+  if (!rec.in.length) inT.innerHTML='<span class="empty-hint">なし</span>';
+  rec.in.forEach(m=>{const b=document.createElement('span');b.className='badge-in';b.textContent=m.name+(m.count>0?' '+m.count+'台':'');inT.appendChild(b);});
+  inSec.appendChild(inT);
+
+  // 撤去
+  const outSec = document.createElement('div'); outSec.className='rec-sec out';
+  outSec.innerHTML = `<h5>❌ 撤去 ${rec.out.length}機種</h5>`;
+  const outT = document.createElement('div');
+  if (!rec.out.length) outT.innerHTML='<span class="empty-hint">なし</span>';
+  rec.out.forEach(m=>{const b=document.createElement('span');b.className='badge-out';b.textContent=m.name;outT.appendChild(b);});
+  outSec.appendChild(outT);
+
+  body.append(inSec, outSec);
+  card.appendChild(body);
+  return card;
+}
+
+// ─── 全店舗ビュー ─────────────────────────────
+function renderAll(panel) {
+  const fr = document.createElement('div'); fr.className='filter-row';
+  fr.innerHTML = `
+    <label>店舗：</label>
+    <select id="fs"><option value="">全店舗</option>${STORES.map(s=>`<option value="${s.id}">${s.name}</option>`).join('')}</select>
+    <label>期間：</label>
+    <input type="date" id="ff">〜<input type="date" id="ft">
+    <input type="text" id="fn" placeholder="機種名で検索" style="min-width:120px">
+  `;
+  panel.appendChild(fr);
+  const wrap = document.createElement('div'); wrap.id='aw'; panel.appendChild(wrap);
+  function applyFilter() {
+    const fs=document.getElementById('fs')?.value||'';
+    const ff=document.getElementById('ff')?.value||'';
+    const ft=document.getElementById('ft')?.value||'';
+    const fn=(document.getElementById('fn')?.value||'').trim().toLowerCase();
+    let res=[...records];
+    if(fs) res=res.filter(r=>r.storeId===fs);
+    if(ff) res=res.filter(r=>r.date>=ff);
+    if(ft) res=res.filter(r=>r.date<=ft);
+    if(fn) res=res.filter(r=>r.in.some(m=>m.name.toLowerCase().includes(fn))||r.out.some(m=>m.name.toLowerCase().includes(fn)));
+    res.sort((a,b)=>b.date.localeCompare(a.date));
+    const w=document.getElementById('aw'); if(!w) return;
+    w.innerHTML='';
+    if(!res.length){w.innerHTML='<p style="color:#94a3b8;font-size:13px;padding:8px">記録なし</p>';return;}
+    const hw=document.createElement('div'); hw.className='hist-wrap';
+    res.forEach(r=>hw.appendChild(buildRecCard(r,true)));
+    w.appendChild(hw);
+  }
+  setTimeout(()=>{['fs','ff','ft','fn'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',applyFilter)});applyFilter();},0);
+}
+
+load();
+render(0);
+</script>
+</body>
+</html>
