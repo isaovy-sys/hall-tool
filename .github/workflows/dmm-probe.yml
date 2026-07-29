@@ -1,0 +1,31 @@
+name: DMM Cloud Probe
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/dmm-probe.yml"
+      - "package.json"
+      - "scripts/probe-dmm.mjs"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dmm-cloud-probe
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    container:
+      image: mcr.microsoft.com/playwright:v1.62.0-noble
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - run: npm run probe
