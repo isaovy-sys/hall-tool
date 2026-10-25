@@ -1,0 +1,3591 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "knowledgeSnapshotDate": "2026-10-25",
+  "machines": [
+    {
+      "id": "slot:ltoloveるダークネス",
+      "name": "L ToLOVEるダークネス",
+      "formalName": "LToLOVEるダークネスS6",
+      "aliases": [
+        "L ToLOVEるダークネス"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:ltoloveるダークネス",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L ToLOVEるダークネス"
+        ],
+        "generation": "L ToLOVEるダークネス。既存設置DBの型式：LToLOVEるダークネスS6。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶G数",
+          "前回ボーナス終了からのG数",
+          "トランス・どきどきポイント示唆"
+        ],
+        "unknowns": [
+          "内部G加算値",
+          "ポイントの電源断持越し詳細",
+          "現在の内部状態"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・有利区間を初期化し、トランスポイントとどきどきポイントを再抽選する。",
+        "carryover": "据え置きでは天井進行・内部状態・有利区間を引き継ぐ。ポイント類個別の持越し条件はこの資料では不明。",
+        "resetBenefits": "天井を650G+αに短縮し、内部通常G数をランダム加算。ポイント初期値にも抽選がある。",
+        "ceilingConditions": "設定変更後650G+α。内部G加算があるため、ランプG数の単純比較だけでは到達までのG数を確定できない。通常最大天井はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 L ToLOVEるダークネス 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/752/21708/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lultraman最終決戦",
+      "name": "L ULTRAMAN 最終決戦",
+      "formalName": "LパチスロULTRAMAN最終決戦ME",
+      "aliases": [
+        "L ULTRAMAN 最終決戦"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lultraman最終決戦",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L ULTRAMAN 最終決戦"
+        ],
+        "generation": "既存DB：L ULTRAMAN 最終決戦／型式 LパチスロULTRAMAN最終決戦ME。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態を初期化。",
+        "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "AT間1000G+α、CZ間500G+αに短縮。高確移行抽選あり。",
+        "ceilingConditions": "通常はAT間1500G+α・CZ間700G+α。ボーナスなどの表示でランプがリセットされる場合はAT間/CZ間の計数を分ける。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間とCZ間のG数を区別できれば比較を改善できる",
+          "液晶の引き戻し表示があれば追加照合"
+        ],
+        "unknowns": [
+          "開始ステージによる判別は不明",
+          "写真だけでは内部状態は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1195/37661/",
+            "title": "なな徹 ULTRAMAN 最終決戦 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1195/",
+            "title": "なな徹 ULTRAMAN 最終決戦 解析まとめ",
+            "type": "analysis",
+            "scope": "ceiling_conditions"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:lゴジラ対エヴァンゲリオン",
+      "name": "L ゴジラ対エヴァンゲリオン",
+      "formalName": "Lゴジラ対エヴァンゲリオンjA",
+      "aliases": [
+        "L ゴジラ対エヴァンゲリオン"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lゴジラ対エヴァンゲリオン",
+        "machineName": "L ゴジラ対エヴァンゲリオン",
+        "formalName": "Lゴジラ対エヴァンゲリオンjA",
+        "aliases": [
+          "L ゴジラ対エヴァンゲリオン",
+          "Lゴジラ対エヴァンゲリオンjA"
+        ],
+        "generation": "L ゴジラ対エヴァンゲリオン（既存DBの型式: Lゴジラ対エヴァンゲリオンjA）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数とボーナス回数をリセット、内部状態を再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・ボーナス回数・内部状態を引き継ぐ。",
+        "resetBenefits": "ボーナス天井を1000G+αから700G+α、AT当選のボーナス回数天井を最大9回から最大5回へ短縮。",
+        "ceilingConditions": "通常最大1000G+αでボーナス、最大9回目のボーナスでAT。設定変更後は700G+α・最大5回。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT間ボーナス回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT間ボーナス回数"
+        ],
+        "unknowns": [
+          "現在の内部状態"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜L ゴジラ対エヴァンゲリオン｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4242/1/100321",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:l東京喰種",
+      "name": "L 東京喰種",
+      "formalName": "L東京喰種CT,L東京喰種FT",
+      "aliases": [
+        "L 東京喰種"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l東京喰種",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L 東京喰種"
+        ],
+        "generation": "L 東京喰種。既存設置DBの型式：L東京喰種CT,L東京喰種FT。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・喰ポイント・赫眼状態を初期化し、朝一モードへ移る。",
+        "carryover": "据え置きでは天井の進行、内部状態、モード、喰ポイント、赫眼状態を引き継ぐ。",
+        "resetBenefits": "初回CZ天井が200G+αになる。最初の非有利区間には成立役に応じた恩恵がある。",
+        "ceilingConditions": "朝一モードのCZ天井200G+α。通常モードのCZ天井は最大600G（別途モード資料で確認）。AT天井とは別。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶のCZ間G数",
+          "AT終了後かCZ失敗後か",
+          "喰ポイント・モード示唆"
+        ],
+        "unknowns": [
+          "写真のランプG数と液晶CZ間G数が一致するか",
+          "現在の内部モード・喰ポイント量"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 L 東京喰種 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/889/27253/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "title": "なな徹 L東京喰種 モードとゾーン",
+            "url": "https://nana-press.com/kaiseki/machine/889/27550/",
+            "type": "analysis",
+            "scope": "normal_cz_ceiling"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:l真一騎当千",
+      "name": "L 真・一騎当千",
+      "formalName": "Lパチスロ真・一騎当千V",
+      "aliases": [
+        "L 真・一騎当千"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l真一騎当千",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L 真・一騎当千"
+        ],
+        "generation": "既存DB：L 真・一騎当千／型式 Lパチスロ真・一騎当千V。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態を初期化。",
+        "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "最大400G+αに短縮し、さらにゲーム数の減算抽選あり。通常Dか天国で開始。",
+        "ceilingConditions": "変更後最大400G+α。個々の減算値や天国滞在は画像から確定しない。通常時上限は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "設定変更時の減算結果・実際のモードは不明",
+          "開始ステージは出典でも調査中"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/815/24377/",
+            "title": "なな徹 真・一騎当千 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:l転生王女と天才令嬢の魔法革命",
+      "name": "L 転生王女と天才令嬢の魔法革命",
+      "formalName": "L転生王女と天才令嬢の魔法革命S3",
+      "aliases": [
+        "L 転生王女と天才令嬢の魔法革命"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l転生王女と天才令嬢の魔法革命",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L 転生王女と天才令嬢の魔法革命"
+        ],
+        "generation": "L 転生王女と天才令嬢の魔法革命。既存設置DBの型式：L転生王女と天才令嬢の魔法革命S3。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "CZ間G数",
+          "通常時ゲーム数",
+          "転天ポイント"
+        ],
+        "unknowns": [
+          "転天ポイントの電源断持越し",
+          "現在の内部状態",
+          "通常時の最大天井"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・有利区間を初期化し、転天ポイントを0～9pt加算抽選する。",
+        "carryover": "据え置きでは天井進行・内部状態・有利区間を引き継ぐ。転天ポイントの持越しは資料でも調査中。",
+        "resetBenefits": "CZ間天井を最大310G+α、通常時ゲーム数天井を410G+αに短縮する。",
+        "ceilingConditions": "リセット後CZ間310G+αでCZ、通常時410G+αでボーナス。転天ポイントの準備中表示は、CZ失敗・ボーナス開始等で開放される。",
+        "sources": [
+          {
+            "title": "なな徹 L 転生王女と天才令嬢の魔法革命 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1233/39362/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lタクトオーパスデスティニー",
+      "name": "Lタクトオーパス デスティニー",
+      "formalName": "LタクトオーパスM1",
+      "aliases": [
+        "Lタクトオーパス デスティニー"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lタクトオーパスデスティニー",
+        "machineName": "Lタクトオーパス デスティニー",
+        "formalName": "LタクトオーパスM1",
+        "aliases": [
+          "Lタクトオーパス デスティニー",
+          "LタクトオーパスM1"
+        ],
+        "generation": "Lタクトオーパス デスティニー（既存DBの型式: LタクトオーパスM1）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数とポイントをリセットし、状態・モードを再抽選する。ポイント表示は???になる。",
+        "carryover": "電源OFF/ONでは天井G数・状態・ポイント・モードを引き継ぐ。ポイント表示は???でも内部的に持ち越す。",
+        "resetBenefits": "CZ間天井は最大300G+α、AT間天井は699G+αに短縮。",
+        "ceilingConditions": "通常はCZ間最大500G+α・AT間999G+α。設定変更後はCZ300G+α・AT699G+α。ボーナス当選ではこれらの天井G数はリセットされない。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "CZ間G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT間G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "CZ間G数",
+          "AT間G数"
+        ],
+        "unknowns": [
+          "表示???の実際のポイント",
+          "現在の内部モード・状態"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜Lタクトオーパス デスティニー｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4721/1/114543",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "パチ＆スロ必勝本｜Lタクトオーパス デスティニー｜通常時・天井条件の公開解析",
+            "url": "https://p.hisshobon.jp/machine/4721/1/115647",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:lパチスロからくりサーカス2",
+      "name": "Lパチスロ からくりサーカス2",
+      "formalName": "Lからくりサーカス2jG",
+      "aliases": [
+        "Lパチスロ からくりサーカス2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロからくりサーカス2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lパチスロ からくりサーカス2"
+        ],
+        "generation": "既存DB：Lパチスロ からくりサーカス2／型式 Lからくりサーカス2jG。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更で天井と内部状態をリセット。",
+        "carryover": "据え置きでは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "CZ天井の液晶ゲーム数が通常1200Gから500Gに短縮。",
+        "ceilingConditions": "CZは液晶G数と実ゲーム数を区別。公開概要では実890GのCZ天井、CZ4連続失敗後5回目、実2500GのAT天井も掲載。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "ステージ挙動は出典で調査中",
+          "写真だけの内部状態・次回モード"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1144/37428/",
+            "title": "なな徹 からくりサーカス2 朝一・リセット",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1144/",
+            "title": "なな徹 からくりサーカス2 解析まとめ",
+            "type": "analysis",
+            "scope": "ceiling"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:lパチスロ彼女、お借りします",
+      "name": "Lパチスロ 彼女、お借りします",
+      "formalName": "Lレンタル彼女bK",
+      "aliases": [
+        "Lパチスロ 彼女、お借りします"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロ彼女、お借りします",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lパチスロ 彼女、お借りします"
+        ],
+        "generation": "既存DB：Lパチスロ 彼女、お借りします／型式 Lレンタル彼女bK。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態を初期化。",
+        "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "ボーナス天井が600Gに短縮。",
+        "ceilingConditions": "通常1000G、REG後800G、設定変更時600Gでかのかりボーナス。ハートメーターは朝一シャッターで隠れるため表示だけで内部ポイントを決めない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数が分かれば比較を改善できる",
+          "直前の当たりがREGか分かれば通常天井を区別できる"
+        ],
+        "unknowns": [
+          "内部ポイント・開始ステージは不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1221/38780/",
+            "title": "なな徹 彼女、お借りします 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1221/38779/",
+            "title": "なな徹 彼女、お借りします 天井",
+            "type": "analysis",
+            "scope": "ceiling_conditions"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:lパチスロ炎炎ノ消防隊2",
+      "name": "Lパチスロ 炎炎ノ消防隊2",
+      "formalName": "L炎炎ノ消防隊2",
+      "aliases": [
+        "Lパチスロ 炎炎ノ消防隊2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロ炎炎ノ消防隊2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lパチスロ 炎炎ノ消防隊2"
+        ],
+        "generation": "既存DB：Lパチスロ 炎炎ノ消防隊2／型式 L炎炎ノ消防隊2。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態・ゲーム数・モードを初期化。",
+        "carryover": "据え置きは天井・内部状態・ゲーム数・モードを引き継ぐ。",
+        "resetBenefits": "ボーナス間650G+α、炎炎ループ間1500G+αに短縮。通常E（119モード）の選択率が上昇。",
+        "ceilingConditions": "ボーナス間と炎炎ループ間の天井を区別。通常時上限は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数が分かれば比較を改善できる",
+          "炎炎ループ間G数や潜伏示唆があれば追加照合"
+        ],
+        "unknowns": [
+          "開始ステージによる判別は不明",
+          "ランプG数だけでは炎炎ループ間G数は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1088/34535/",
+            "title": "なな徹 炎炎ノ消防隊2 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:lパチスロ革命機ヴァルヴレイヴ2",
+      "name": "Lパチスロ 革命機ヴァルヴレイヴ2",
+      "formalName": "L革命機ヴァルヴレイヴ2jF",
+      "aliases": [
+        "Lパチスロ 革命機ヴァルヴレイヴ2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロ革命機ヴァルヴレイヴ2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lパチスロ 革命機ヴァルヴレイヴ2"
+        ],
+        "generation": "Lパチスロ 革命機ヴァルヴレイヴ2。既存設置DBの型式：L革命機ヴァルヴレイヴ2jF。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス・AT間G数",
+          "周期と周期ポイント"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "通常天井の詳細"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・モード・G数・周期ポイント・有利区間を初期化する。",
+        "carryover": "据え置きでは天井進行・内部状態・モード・G数・周期ポイント・有利区間を引き継ぐ。見た目のG数・ポイントは初期表示になる。",
+        "resetBenefits": "ボーナス・AT間の天井が1000Gへ短縮し、初回の周期天井が最大3周期となる。",
+        "ceilingConditions": "設定変更後はボーナス・AT間1000G。周期天井は最大3周期でCZ。G数と周期ポイントを分けて扱う。通常時の最大天井はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 Lパチスロ 革命機ヴァルヴレイヴ2 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1040/32809/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lパチスロガールズ&パンツァー最終章",
+      "name": "Lパチスロガールズ&パンツァー 最終章",
+      "formalName": "Lガールズ&パンツァー最終章H1",
+      "aliases": [
+        "Lパチスロガールズ&パンツァー 最終章"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロガールズ&パンツァー最終章",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lパチスロガールズ&パンツァー 最終章"
+        ],
+        "generation": "Lパチスロガールズ&パンツァー 最終章。既存設置DBの型式：Lガールズ&パンツァー最終章H1。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "CZ失敗回数",
+          "ボコポイント示唆"
+        ],
+        "unknowns": [
+          "選択されたゲーム数天井",
+          "現在のボコポイント",
+          "設定別の未公表振り分け"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で内部状態・有利区間を初期化、天井短縮抽選とボコポイント再抽選を行う。",
+        "carryover": "据え置きでは天井進行・内部状態・有利区間・ボコポイントを引き継ぐ。",
+        "resetBenefits": "天井を500Gまたは1111Gへ振り分ける。初回ベル7回時のCZ抽選・初回CZ種別・ボコポイント初期値を優遇。",
+        "ceilingConditions": "設定変更時のゲーム数天井は500Gまたは1111Gで、前兆後に成功確定CZ。CZスルー天井は別に抽選する。必ず500Gへ短縮するわけではない。",
+        "sources": [
+          {
+            "title": "なな徹 Lパチスロガールズ&パンツァー 最終章 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/678/19214/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lパチスロ戦姫絶唱シンフォギア正義の歌",
+      "name": "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
+      "formalName": "L戦姫絶唱シンフォギア 正義の歌jA",
+      "aliases": [
+        "Lパチスロ戦姫絶唱シンフォギア 正義の歌"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lパチスロ戦姫絶唱シンフォギア正義の歌",
+        "machineName": "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
+        "formalName": "L戦姫絶唱シンフォギア 正義の歌jA",
+        "aliases": [
+          "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
+          "L戦姫絶唱シンフォギア 正義の歌jA",
+          "Lパチスロ 戦姫絶唱シンフォギア 正義の歌"
+        ],
+        "generation": "Lパチスロ戦姫絶唱シンフォギア 正義の歌（既存DBの型式: L戦姫絶唱シンフォギア 正義の歌jA）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数・抜剣メーターをリセットし、CZ抽選テーブルを再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・抜剣メーター・CZ抽選テーブルを内部的に引き継ぐ。G数とメーター表示は初期表示に戻る。",
+        "resetBenefits": "天井は最大498G+αに短縮され、天国への移行が優遇される。",
+        "ceilingConditions": "通常時は最大777G+αでAT、天国は100G以内。設定変更後の最大天井は498G+α。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。"
+        ],
+        "unknowns": [
+          "表示G数と内部G数の差",
+          "現在の内部モード・抜剣メーターの内部値"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜Lパチスロ戦姫絶唱シンフォギア 正義の歌｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2624/2",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "なな徹｜Lパチスロ戦姫絶唱シンフォギア 正義の歌｜通常時・天井条件の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/760/22574/",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:lラブ嬢3〜wご指名はいかがですか?〜",
+      "name": "Lラブ嬢3〜Wご指名はいかがですか?〜",
+      "formalName": "Lラブ嬢3M4",
+      "aliases": [
+        "Lラブ嬢3〜Wご指名はいかがですか?〜"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lラブ嬢3〜wご指名はいかがですか?〜",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lラブ嬢3〜Wご指名はいかがですか?〜"
+        ],
+        "generation": "Lラブ嬢3〜Wご指名はいかがですか?〜。既存設置DBの型式：Lラブ嬢3M4。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "キャバポイント・モード示唆"
+        ],
+        "unknowns": [
+          "現在の内部モード・内部キャバポイント"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・モード・有利区間を初期化し、キャバポイントは0ptになる。",
+        "carryover": "据え置きでは天井進行・内部状態・モード・有利区間・キャバポイントを引き継ぐ。表示ポイントは0ptになる。",
+        "resetBenefits": "通常Cまたは天国A/Bが選ばれ、通常Cは500G+α以内、天国は100G+αでAT天井。",
+        "ceilingConditions": "通常A/Bは750G、通常C500G、天国A/B100G（前兆を加える）。リセット後は通常C以上。表示キャバポイント0だけでは持越しなしと判断しない。",
+        "sources": [
+          {
+            "title": "なな徹 Lラブ嬢3〜Wご指名はいかがですか?〜 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/651/18114/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lルパン三世大航海者の秘宝",
+      "name": "Lルパン三世 大航海者の秘宝",
+      "formalName": "Lルパン三世大航海者の秘宝H1",
+      "aliases": [
+        "Lルパン三世 大航海者の秘宝"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:lルパン三世大航海者の秘宝",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "Lルパン三世 大航海者の秘宝"
+        ],
+        "generation": "既存DB：Lルパン三世 大航海者の秘宝／型式 Lルパン三世大航海者の秘宝H1。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態・山盛りポイントを初期化。",
+        "carryover": "据え置きは天井・内部状態・山盛りポイントを引き継ぐ。",
+        "resetBenefits": "AT間天井が700G+αに短縮。",
+        "ceilingConditions": "ボーナスに当選してもAT非当選ならAT間G数はクリアされない。通常時上限は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数が分かれば比較を改善できる",
+          "ボーナスでATに入ったかと液晶ポイントがあれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/851/25845/",
+            "title": "なな徹 ルパン三世 大航海者の秘宝 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:l戦国乙女4戦乱に閃く炯眼の軍師",
+      "name": "L戦国乙女4 戦乱に閃く炯眼の軍師",
+      "formalName": "L戦国乙女4S3",
+      "aliases": [
+        "L戦国乙女4 戦乱に閃く炯眼の軍師"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l戦国乙女4戦乱に閃く炯眼の軍師",
+        "machineName": "L戦国乙女4 戦乱に閃く炯眼の軍師",
+        "formalName": "L戦国乙女4S3",
+        "aliases": [
+          "L戦国乙女4 戦乱に閃く炯眼の軍師",
+          "L戦国乙女4S3",
+          "スマスロ戦国乙女4"
+        ],
+        "generation": "L戦国乙女4 戦乱に閃く炯眼の軍師（既存DBの型式: L戦国乙女4S3）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "ゲーム数天井・内部状態をリセット、モードを再抽選。ボーナススルー天井回数と巫女カウンターはランダムに再セット。",
+        "carryover": "据え置きでは天井G数・ボーナススルー回数・モード・内部状態を引き継ぎ、巫女カウンターも内部的に持ち越す。",
+        "resetBenefits": "ボーナススルー回数を再セットするため、通常より少ないスルー回数で天井が発動する場合がある。一律のG数短縮は今回確認できない。",
+        "ceilingConditions": "ボーナス天井は最大799G+α。ボーナスで6回連続AT非当選なら7回目はAT確定のエピソードボーナス。モードにより短い天井あり。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT非当選のボーナス連続回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "巫女カウンター：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT非当選のボーナス連続回数",
+          "巫女カウンター"
+        ],
+        "unknowns": [
+          "再セットされたボーナススルー回数・巫女カウンターの内部値",
+          "現在のモード"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜L戦国乙女4 戦乱に閃く炯眼の軍師｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/597/16397/",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "なな徹｜L戦国乙女4 戦乱に閃く炯眼の軍師｜通常時・天井条件の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/597/16395/",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:l戦国乙女5業火を穿つ宿焔の双刃",
+      "name": "L戦国乙女5 業火を穿つ宿焔の双刃",
+      "formalName": "L戦国乙女5L8",
+      "aliases": [
+        "L戦国乙女5 業火を穿つ宿焔の双刃"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l戦国乙女5業火を穿つ宿焔の双刃",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L戦国乙女5 業火を穿つ宿焔の双刃"
+        ],
+        "generation": "L戦国乙女5 業火を穿つ宿焔の双刃。既存設置DBの型式：L戦国乙女5L8。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・周期テーブル/モード・乙女ストラップ・ゴエモン依頼ポイントをリセットする。",
+        "carryover": "据え置きではそれらの天井進行・状態・周期・蓄積を引き継ぐ。",
+        "resetBenefits": "実G数天井650G+α、最大4周期へ短縮。巫女ポイントが内部でランダム減算される。",
+        "ceilingConditions": "リセット後は実G数650G+αまたは最大4周期でAT。通常上限はこの記録では不明。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間実G数",
+          "周期・巫女ポイント",
+          "乙女ストラップの示唆"
+        ],
+        "unknowns": [
+          "内部巫女ポイント減算量",
+          "現在周期モード・朝一ステージ"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 L戦国乙女5 業火を穿つ宿焔の双刃 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1160/37316/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:l無職転生~異世界行ったら本気だす~",
+      "name": "L無職転生~異世界行ったら本気だす~",
+      "formalName": "L無職転生〜異世界行ったら本気だす〜NM",
+      "aliases": [
+        "L無職転生~異世界行ったら本気だす~"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l無職転生~異世界行ったら本気だす~",
+        "machineName": "L無職転生~異世界行ったら本気だす~",
+        "formalName": "L無職転生〜異世界行ったら本気だす〜NM",
+        "aliases": [
+          "L無職転生~異世界行ったら本気だす~",
+          "L無職転生〜異世界行ったら本気だす〜NM",
+          "L無職転生 〜異世界行ったら本気だす〜"
+        ],
+        "generation": "L無職転生~異世界行ったら本気だす~（既存DBの型式: L無職転生〜異世界行ったら本気だす〜NM）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井・G数・ステージチェンジ回数をリセットする。",
+        "carryover": "据え置きでは天井・G数・ステージチェンジ回数を内部的に引き継ぐ。表示される回数は初期表示に戻るため、表示だけでは判別できない。",
+        "resetBenefits": "ボーナス天井のステージチェンジ回数は13回、AT天井は17回へ短縮。",
+        "ceilingConditions": "通常のボーナス天井はステージチェンジ最大19回、AT天井は40回（AT濃厚のエピソードボーナス）。設定変更後は13回・17回。G数と回数は別に扱う。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "ステージチェンジ回数（ボーナス間・AT間）：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "ステージチェンジ回数（ボーナス間・AT間）"
+        ],
+        "unknowns": [
+          "表示されない内部持越し回数",
+          "写真だけから内部状態は特定できない"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜L無職転生~異世界行ったら本気だす~｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1058/33840/",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "なな徹｜L無職転生~異世界行ったら本気だす~｜通常時・天井条件の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1058/33837/",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:l聖闘士星矢海皇覚醒customedition",
+      "name": "L聖闘士星矢 海皇覚醒 CUSTOM EDITION",
+      "formalName": "L聖闘士星矢海皇覚醒ED",
+      "aliases": [
+        "L聖闘士星矢 海皇覚醒 CUSTOM EDITION"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l聖闘士星矢海皇覚醒customedition",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 聖闘士星矢 海皇覚醒 CUSTOM EDITION"
+        ],
+        "generation": "2024年のCUSTOM EDITION。メーカー一次資料の型式L聖闘士星矢海皇覚醒EDと既存DBが一致。旧海皇覚醒・SPには適用しない。",
+        "resetSpec": "必勝本の編集部調べでは、設定変更でゲーム数・GB回数の天井蓄積が消え、モード、GB/CZ抽選状態、GBレベル、不屈ポイントは再抽選される。リセットは既存の蓄積を消す一方、再抽選の恩恵もあるので一律には勧めない。",
+        "carryover": "同資料では電源OFF/ONのみの場合、ゲーム数とGB回数の蓄積、各抽選状態、GBレベル、不屈ポイントを持ち越す。小宇宙ポイントは表示0でも内部的に持ち越すとされる。遊技履歴の表示は消えるため内部蓄積と区別する。",
+        "ceilingConditions": "編集部調べ：通常時は最大999G+αでGB。GB8連続スルー後は次回勝利確定のGB。GB当選とAT当選を混同せず、ランプ表示がGB間の実ゲーム数かを確認して使う。",
+        "resetBenefits": "別項目の設定変更時の恩恵では、GBスルー回数天井、不屈の初期値、GB・CZの抽選状態、GBレベル振分けの優遇が説明されている。再抽選で実際に選ばれた値は写真から断定できず、持ち越される蓄積との比較が必要。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "現在のGB間ゲーム数",
+          "直近AT後の正確なGB失敗回数",
+          "GBレベル・不屈の示唆と閉店時状態"
+        ],
+        "unknowns": [
+          "写真だけでは正確な内部不屈量・GBレベルは不明",
+          "データランプのBB回数をそのままGB連続スルー回数とは扱わない",
+          "メーカー一次資料では今回参照したリセット内部仕様を確認できない"
+        ],
+        "sources": [
+          {
+            "type": "primary",
+            "title": "三洋販売・サンスリー 2024-04-05 発表資料（機種名・型式の確認のみ）",
+            "url": "https://www.sanyobussan.co.jp/information/pdf/sanyo_press_release_20240405.pdf",
+            "scope": "identity"
+          },
+          {
+            "type": "analysis",
+            "title": "パチ＆スロ必勝本 天井＆設定変更（編集部調べ・メーカー公表仕様とは区別）",
+            "url": "https://p.hisshobon.jp/machine/4307/1/102208",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "type": "analysis",
+            "title": "パチ＆スロ必勝本 設定変更時の恩恵（編集部調べ）",
+            "url": "https://p.hisshobon.jp/machine/4307/1/103133",
+            "scope": "reset_benefits"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "出典の記載を確認した状態。全内部仕様をメーカー確認した意味ではない。独自のG数・スルー回数の判断ラインは作らず、観測した状態と出典の仕様から比較する。"
+      }
+    },
+    {
+      "id": "slot:l邪神ちゃんドロップキック",
+      "name": "L邪神ちゃんドロップキック",
+      "formalName": "L邪神ちゃんドロップキックTX",
+      "aliases": [
+        "L邪神ちゃんドロップキック"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l邪神ちゃんドロップキック",
+        "machineName": "L邪神ちゃんドロップキック",
+        "formalName": "L邪神ちゃんドロップキックTX",
+        "aliases": [
+          "L邪神ちゃんドロップキック",
+          "L邪神ちゃんドロップキックTX"
+        ],
+        "generation": "L邪神ちゃんドロップキック（既存DBの型式: L邪神ちゃんドロップキックTX）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井・通常モード・ちゃんすラインポイントをリセット。通常Cまたは天国モードが濃厚。",
+        "carryover": "据え置きでは天井・通常モード・ちゃんすラインポイントを引き継ぐ。",
+        "resetBenefits": "最大天井599Gへ短縮。ちゃんすラインのいずれか1ラインが1周期天井になる。",
+        "ceilingConditions": "通常A/Bは749G、通常Cは599G、特殊は799G。天国A/Bでは99G以内のボーナスが濃厚。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "ちゃんすラインポイント・周期：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "ちゃんすラインポイント・周期"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "リセットで1周期天井に選ばれるライン"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜L邪神ちゃんドロップキック｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1181/38249/",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "なな徹｜L邪神ちゃんドロップキック｜通常時・天井条件の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1181/38246/",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:l青春ブタ野郎はバニーガール先輩の夢を見ない",
+      "name": "L青春ブタ野郎はバニーガール先輩の夢を見ない",
+      "formalName": "L青春ブタ野郎L1",
+      "aliases": [
+        "L青春ブタ野郎はバニーガール先輩の夢を見ない"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l青春ブタ野郎はバニーガール先輩の夢を見ない",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L青春ブタ野郎はバニーガール先輩の夢を見ない"
+        ],
+        "generation": "L青春ブタ野郎はバニーガール先輩の夢を見ない。既存設置DBの型式：L青春ブタ野郎L1。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ST間実G数",
+          "CZ間G数・CZ失敗回数",
+          "思春期ポイント"
+        ],
+        "unknowns": [
+          "思春期ポイント・かえでスタンプの持越し",
+          "資料にボーナス間とST間の表記差あり。通常画面のG数定義を確認"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井G数・CZスルー回数をリセット、状態・不可思議モードを再抽選する。かえでスタンプは0個。",
+        "carryover": "電源OFF/ONでは天井G数・CZスルー回数・状態・不可思議モードを引き継ぐ。思春期ポイント・かえでスタンプの持越しは不明。",
+        "resetBenefits": "ST間の実ゲーム数天井を通常899G+αから699G+αに短縮する。",
+        "ceilingConditions": "思春期1000ptまたはCZ間560G+αでCZ。ST間899G+α（設定変更後699G+α）で初当たり。CZ6連続失敗後の次回CZは成功濃厚。",
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本 青春ブタ野郎 天井＆設定変更",
+            "url": "https://p.hisshobon.jp/machine/4792/1/4",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "title": "パチ＆スロ必勝本 青春ブタ野郎 通常時解説",
+            "url": "https://p.hisshobon.jp/machine/4792/1/12",
+            "type": "analysis",
+            "scope": "ceiling_and_points"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:l魔法少女にあこがれて",
+      "name": "L魔法少女にあこがれて",
+      "formalName": "L魔法少女にあこがれてNP",
+      "aliases": [
+        "L魔法少女にあこがれて"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:l魔法少女にあこがれて",
+        "status": "draft",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "L魔法少女にあこがれて"
+        ],
+        "generation": "既存DB：L魔法少女にあこがれて／型式 L魔法少女にあこがれてNP。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更時のAT間天井短縮と初回百合メーターMAX時の抽選優遇を確認。各状態の初期化範囲は不明。",
+        "carryover": "不明。今回確認した公開ページには電源OFF/ONで持ち越す範囲の明記がない。",
+        "resetBenefits": "AT間799Gへ短縮。初回の百合メーターMAX時にCZ当選率を優遇。",
+        "ceilingConditions": "通常AT間999G・設定変更時799G。ボーナスを挟んでもAT間G数はクリアされない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数が分かれば比較を改善できる",
+          "百合メーターや前回AT終了時点が分かれば追加照合"
+        ],
+        "unknowns": [
+          "据え置き時のAT間G数・百合メーター・内部状態の持越しは不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1241/39490/",
+            "title": "なな徹 魔法少女にあこがれて 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_only"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:いざ!番長",
+      "name": "いざ!番長",
+      "formalName": "L/いざ番長/SB8",
+      "aliases": [
+        "いざ!番長"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:いざ!番長",
+        "machineName": "いざ!番長",
+        "formalName": "L/いざ番長/SB8",
+        "aliases": [
+          "いざ!番長",
+          "L/いざ番長/SB8",
+          "いざ！番長"
+        ],
+        "generation": "いざ!番長（既存DBの型式: L/いざ番長/SB8）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数・モード・内部状態・刀ポイント・御免ポイントをリセットし再設定。内部G数加算がある。",
+        "carryover": "電源OFF/ONでは天井G数・モード・内部状態・刀ポイント・御免ポイントを引き継ぐ。",
+        "resetBenefits": "チャンスA以上から開始して天井最大600G+α。御免ポイントも優遇される。",
+        "ceilingConditions": "設定変更後の最大天井は600G+α。天国選択時はさらに短い。通常時の最大天井はこの資料では未確認。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。"
+        ],
+        "unknowns": [
+          "現在の内部モード・御免ポイント・内部加算G数"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜いざ!番長｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/946/29780/",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:アニマルスロットドッチ",
+      "name": "アニマルスロット ドッチ",
+      "formalName": "LアニマルスロットドッチZT",
+      "aliases": [
+        "アニマルスロット ドッチ"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:アニマルスロットドッチ",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "アニマルスロット ドッチ"
+        ],
+        "generation": "既存DB：アニマルスロット ドッチ／型式 LアニマルスロットドッチZT。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井を499Gに短縮し、赤満月移行レベルを3以上に設定。",
+        "carryover": "据え置きは天井ゲーム数・赤満月移行レベルを引き継ぐ。",
+        "resetBenefits": "天井499GでBIG当選。赤満月移行レベル3以上。",
+        "ceilingConditions": "通常時の天井は最大999G、変更時499G。ノーマルタイプとして扱わない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "天井・赤満月移行レベル以外の持越し詳細は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1126/",
+            "title": "なな徹 アニマルスロット ドッチ 解析まとめ",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロとある魔術の禁書目録2",
+      "name": "スマスロ とある魔術の禁書目録2",
+      "formalName": "Lとある魔術の禁書目録2FA",
+      "aliases": [
+        "スマスロ とある魔術の禁書目録2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロとある魔術の禁書目録2",
+        "machineName": "スマスロ とある魔術の禁書目録2",
+        "formalName": "Lとある魔術の禁書目録2FA",
+        "aliases": [
+          "スマスロ とある魔術の禁書目録2",
+          "Lとある魔術の禁書目録2FA",
+          "L とある魔術の禁書目録2"
+        ],
+        "generation": "スマスロ とある魔術の禁書目録2（既存DBの型式: Lとある魔術の禁書目録2FA）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井までのゲーム数をリセットし、モードは朝イチ、状態は再抽選となる。",
+        "carryover": "電源OFF/ONのみなら天井までのゲーム数・モード・状態を引き継ぐ。",
+        "resetBenefits": "液晶右下の消化ゲーム数天井は200G+α、左上の実ゲーム数天井は777Gに短縮。",
+        "ceilingConditions": "通常は右下の消化ゲーム数800G+αでCZまたはAT、左上の実ゲーム数1200GでAT。表示と実G数を別々に扱う。",
+        "requiredObservations": [],
+        "observationRequirements": [
+          "液晶右下の加算を含む消化ゲーム数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "液晶左上の実ゲーム数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "通常時・CZ・ATの状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "液晶右下の加算を含む消化ゲーム数",
+          "液晶左上の実ゲーム数",
+          "通常時・CZ・ATの状態"
+        ],
+        "unknowns": [
+          "再抽選後に選ばれる内部状態",
+          "電源OFF/ON後のステージ"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロ とある魔術の禁書目録2｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4781/1/116208",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロやじきた道中記参る!",
+      "name": "スマスロ やじきた道中記参る!",
+      "formalName": "Lやじきた道中記参る!BG",
+      "aliases": [
+        "スマスロ やじきた道中記参る!"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロやじきた道中記参る!",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ やじきた道中記参る!"
+        ],
+        "generation": "既存DB：スマスロ やじきた道中記参る!／型式 Lやじきた道中記参る!BG。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・まいるポイント・まいるモード・まいるテーブルを初期化。",
+        "carryover": "据え置きは天井・まいるポイント・まいるモード・まいるテーブルを引き継ぐ。",
+        "resetBenefits": "特殊Aテーブル、関所チャレンジの勝率、初回あっぱれチャンスのキャラ抽選が優遇。",
+        "ceilingConditions": "天井はまいるポイントを用いる。具体的な上限値は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶のまいるポイントがあれば比較を改善できる",
+          "関所・あっぱれチャンスの終了履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "まいるとデータランプG数の関係は写真ごとに不明",
+          "開始ステージは出典でも調査中"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1186/38338/",
+            "title": "なな徹 やじきた道中記参る! 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロゴッドイーターリザレクション",
+      "name": "スマスロ ゴッドイーター リザレクション",
+      "formalName": "LパチスロゴッドイーターリザレクションSLED",
+      "aliases": [
+        "スマスロ ゴッドイーター リザレクション"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロゴッドイーターリザレクション",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ ゴッドイーター リザレクション"
+        ],
+        "generation": "既存DB：スマスロ ゴッドイーター リザレクション／型式 LパチスロゴッドイーターリザレクションSLED。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更で天井・内部状態をリセットし、偏食因子の初期ポイントを獲得。",
+        "carryover": "据え置きでは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "天井600G+αへ短縮。偏食因子の初期ポイント抽選あり。",
+        "ceilingConditions": "変更後600G+α。通常時天井値は今回のページでは未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "実際の偏食因子初期ポイント",
+          "写真だけの内部状態",
+          "出典のリセット判別方法は調査中"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/767/22719/",
+            "title": "なな徹 ゴッドイーター リザレクション 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロストリートファイター6",
+      "name": "スマスロ ストリートファイター6",
+      "formalName": "Lストリートファイター6SB",
+      "aliases": [
+        "スマスロ ストリートファイター6"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロストリートファイター6",
+        "machineName": "スマスロ ストリートファイター6",
+        "formalName": "Lストリートファイター6SB",
+        "aliases": [
+          "スマスロ ストリートファイター6",
+          "Lストリートファイター6SB",
+          "L ストリートファイター6"
+        ],
+        "generation": "スマスロ ストリートファイター6（既存DBの型式: Lストリートファイター6SB）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井までのゲーム数はリセットされ、モードは通常B以上へ再抽選、状態も再抽選される。",
+        "carryover": "電源OFF/ONのみなら天井までのゲーム数、モード、状態を引き継ぐ。",
+        "resetBenefits": "通常B以上のモードとなり、液晶ゲーム数の最大天井が900G+αに短縮される。",
+        "ceilingConditions": "通常時の液晶ゲーム数は最大1000G+αでFB。FBを最大3回初回敗北すると、最大4回目のFBは初回勝利濃厚。実ゲーム数と加算された液晶G数を混同しない。",
+        "requiredObservations": [],
+        "observationRequirements": [
+          "液晶ゲーム数と実ゲーム数の区別：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "FB連続初回敗北回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "液晶ゲーム数と実ゲーム数の区別",
+          "FB連続初回敗北回数"
+        ],
+        "unknowns": [
+          "STREET FIGHTER文字・電源OFF/ON時液晶カウンタの扱い",
+          "写真だけから滞在モードは断定不可"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロ ストリートファイター6｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2803/1",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロドルアーガの塔",
+      "name": "スマスロ ドルアーガの塔",
+      "formalName": "Lドルアーガの塔ZA",
+      "aliases": [
+        "スマスロ ドルアーガの塔"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロドルアーガの塔",
+        "machineName": "スマスロ ドルアーガの塔",
+        "formalName": "Lドルアーガの塔ZA",
+        "aliases": [
+          "スマスロ ドルアーガの塔",
+          "Lドルアーガの塔ZA",
+          "L ドルアーガの塔"
+        ],
+        "generation": "スマスロ ドルアーガの塔（既存DBの型式: Lドルアーガの塔ZA）に限定。別世代・別型式へ転用しない。",
+        "status": "draft",
+        "evidenceLevel": "analysis",
+        "resetSpec": "設定変更ではチャンスタイムをリセットする。",
+        "carryover": "不明。電源OFF/ONでのチャンスタイムの扱いは参照資料でも調査中。",
+        "resetBenefits": "天井なし。通常時の当選優遇の有無は不明。",
+        "ceilingConditions": "天井なし。",
+        "requiredObservations": [],
+        "observationRequirements": [
+          "チャンスタイム・ATの状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "チャンスタイム・ATの状態"
+        ],
+        "unknowns": [
+          "電源OFF/ONでのチャンスタイム持越し",
+          "スマスロとメダル機を併記する資料のため別型式へ横展開しない"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロ ドルアーガの塔｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2722/2",
+            "type": "analysis",
+            "scope": "公開解析の確認できた部分と未確認部分。天井確認だけではリセット・持越し全体を確認済みにしない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開記事を本文まで確認したが、設定変更または持ち越しの詳細が不足・不一致のため暫定登録。"
+      }
+    },
+    {
+      "id": "slot:スマスロバイオハザード5",
+      "name": "スマスロ バイオハザード5",
+      "formalName": "Lバイオハザード5ZE",
+      "aliases": [
+        "スマスロ バイオハザード5"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロバイオハザード5",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ バイオハザード5"
+        ],
+        "generation": "スマスロ バイオハザード5。既存設置DBの型式：Lバイオハザード5ZE。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "増殖アイコン"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "ランプG数と天井カウントの対応"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・有利区間・内部モード・増殖アイコンを初期化する。",
+        "carryover": "据え置きでは天井進行・有利区間・内部モード・増殖アイコンを引き継ぐ。",
+        "resetBenefits": "天井を666G+αに短縮する。",
+        "ceilingConditions": "リセット後666G+α。通常最大天井はこの資料では不明。増殖アイコンとゲーム数天井を分ける。",
+        "sources": [
+          {
+            "title": "なな徹 スマスロ バイオハザード5 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/904/27844/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スマスロバイオハザードre:3",
+      "name": "スマスロ バイオハザードRE:3",
+      "formalName": "LバイオハザードRE:3 ZD",
+      "aliases": [
+        "スマスロ バイオハザードRE:3"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロバイオハザードre:3",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ バイオハザードRE:3"
+        ],
+        "generation": "既存DB：スマスロ バイオハザードRE:3／型式 LバイオハザードRE:3 ZD。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更で天井・モードをリセット。",
+        "carryover": "据え置きでは天井・モードを引き継ぐ。",
+        "resetBenefits": "ゲーム数天井650G+αへ短縮。天井到達時はパンデミックチャンスを経由。",
+        "ceilingConditions": "設定変更後650G+α。通常時上限やCZ回数天井は今回の確認範囲では不明。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "ステージは調査中",
+          "写真だけのモード・CZ連続失敗回数"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1140/36678/",
+            "title": "なな徹 バイオハザードRE:3 朝一・リセット",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロマギアレコード魔法少女まどか☆マギカ外伝",
+      "name": "スマスロ マギアレコード 魔法少女まどか☆マギカ外伝",
+      "formalName": "L/スマスロマギアレコード/RN",
+      "aliases": [
+        "スマスロ マギアレコード 魔法少女まどか☆マギカ外伝"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロマギアレコード魔法少女まどか☆マギカ外伝",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ マギアレコード 魔法少女まどか☆マギカ外伝"
+        ],
+        "generation": "既存DB：スマスロ マギアレコード 魔法少女まどか☆マギカ外伝／型式 L/スマスロマギアレコード/RN。同名旧作・別世代へ流用しない。",
+        "resetSpec": "ポイント・内部状態・魔法少女モード・穢れを初期化。",
+        "carryover": "据え置きはポイント・内部状態・魔法少女モード・穢れを引き継ぐ。",
+        "resetBenefits": "ポイント天井が600〜699pt+αに短縮。高確や魔法少女モードの抽選がある。",
+        "ceilingConditions": "変更後の上限699pt+α。液晶ptとデータランプG数は同一とは限らず、G数への置換をしない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶ptがあれば天井までの比較を改善できる",
+          "穢れや魔法少女モードの示唆があれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/914/28429/",
+            "title": "なな徹 マギアレコード 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロミリオンゴッド-神々の軌跡-",
+      "name": "スマスロ ミリオンゴッド-神々の軌跡-",
+      "formalName": "L/ミリオンゴッド/CX",
+      "aliases": [
+        "スマスロ ミリオンゴッド-神々の軌跡-"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロミリオンゴッド-神々の軌跡-",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ ミリオンゴッド-神々の軌跡-"
+        ],
+        "generation": "スマスロ ミリオンゴッド-神々の軌跡-。既存設置DBの型式：L/ミリオンゴッド/CX。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部モード/裏モード・有利区間を初期化し天井を振り分ける。",
+        "carryover": "据え置きでは天井の進行と内部モード・有利区間を引き継ぐ。",
+        "resetBenefits": "変更後の天井は510G・1000G・1480Gの振分け。必ず短縮されるわけではない。",
+        "ceilingConditions": "変更後の振分けは510G、1000G、1480G。前作の神々の凱旋の条件を適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "GG間G数",
+          "GG終了後の前兆・ステージ"
+        ],
+        "unknowns": [
+          "選ばれた天井",
+          "内部モード・裏モード",
+          "朝一ステージ"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ ミリオンゴッド-神々の軌跡- 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1112/35716/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロモンスターハンターライズ",
+      "name": "スマスロ モンスターハンターライズ",
+      "formalName": "LモンスターハンターライズXA",
+      "aliases": [
+        "スマスロ モンスターハンターライズ"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロモンスターハンターライズ",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ モンスターハンターライズ"
+        ],
+        "generation": "スマスロ モンスターハンターライズ。既存設置DBの型式：LモンスターハンターライズXA。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井をリセットし通常状態へ。カムラポイント・リプレイ回数を内部加算し、ポイントモードB以上などを再抽選する。",
+        "carryover": "据え置きでは天井、内部状態、カムラポイント、ポイントモード、クエストテーブル、リプレイ回数、翔蟲ポイント、金冠を引き継ぐ。",
+        "resetBenefits": "ポイントモードB以上、クエストテーブル優遇、ランダム内部加算や初回ATの金冠抽選がある。",
+        "ceilingConditions": "通常ゲーム数天井・クエスト天井の詳細はこのリセット資料だけでは不明。サンブレイクとは別機種。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "AT後のクエスト失敗回数",
+          "カムラポイント・翔蟲の表示"
+        ],
+        "unknowns": [
+          "ランダム加算・再抽選結果",
+          "内部クエストテーブル"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ モンスターハンターライズ 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/837/25311/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロモンスターハンターライズ:サンブレイク",
+      "name": "スマスロ モンスターハンターライズ:サンブレイク",
+      "formalName": "L MHRサンブレイクXA",
+      "aliases": [
+        "スマスロ モンスターハンターライズ:サンブレイク"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロモンスターハンターライズ:サンブレイク",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ モンスターハンターライズ：サンブレイク"
+        ],
+        "generation": "2026年のサンブレイク。既存DBの型式L MHRサンブレイクXAに対応し、前作ライズとは別の機種ID。",
+        "resetSpec": "必勝本の編集部調べでは、設定変更でゲーム数天井までの蓄積とAT間のCZ当選回数が消える。なな徹は内部状態のリセットとリプレイ回数のランダム加算を記載。リセット後の具体的な状態・ステージは不明。",
+        "carryover": "必勝本では電源OFF/ONだけならゲーム数天井・AT間CZ当選回数・状態を持ち越す。なな徹ではリプレイ回数の持ち越しも記載。メーターが？、周期が1周期目表示でも内部持ち越しがあり、見た目だけで初期化を断定しない。",
+        "ceilingConditions": "編集部調べ：CZ間333G+αでCZ、AT間999G+αでAT、AT間でCZ7回当選時は成功濃厚のCZ。別々の到達条件として扱う。",
+        "resetBenefits": "なな徹調べでは、設定変更時に規定リプレイ回数がランダム加算され、初回ATで盟勇クエストに当選した場合の傀異化昇格が優遇される。初当たり確率そのものや必ず出ることを示す仕様ではない。据え置きで残る蓄積と比較する。天井短縮の有無は今回確認した出典の記載だけでは不明。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶のメニュー画面でAT間ゲーム数とCZ間ゲーム数を別々に確認（ランプ0GをAT間0Gと扱わない）",
+          "直近AT後の正確なCZ当選・失敗回数",
+          "内部的な周期と表示の区別"
+        ],
+        "unknowns": [
+          "設定変更後に実際に選ばれる内部状態・リプレイ加算数とステージ",
+          "写真だけからの内部周期の断定",
+          "今回確認した出典だけでは天井短縮の有無は不明",
+          "今回のメーカー一次資料だけではリセット内部仕様は不明"
+        ],
+        "sources": [
+          {
+            "type": "primary",
+            "title": "エンターライズ サンブレイク公式機種サイト（機種識別のみ）",
+            "url": "https://www.enterrise.co.jp/slot/mhrsb/",
+            "scope": "identity"
+          },
+          {
+            "type": "analysis",
+            "title": "パチ＆スロ必勝本 天井＆設定変更 サンブレイク（編集部調べ）",
+            "url": "https://p.hisshobon.jp/machine/4830/1/4",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "type": "analysis",
+            "title": "なな徹 サンブレイク 朝一・リセット（2026-10-22更新・なな徹調べ）",
+            "url": "https://nana-press.com/kaiseki/machine/1216/39312/",
+            "scope": "reset_benefits_and_carryover"
+          },
+          {
+            "type": "analysis",
+            "title": "なな徹 サンブレイク 天井・メニュー画面のゲーム数表示（2026-10-23更新・なな徹調べ）",
+            "url": "https://nana-press.com/kaiseki/machine/1216/39263/",
+            "scope": "ceiling_and_observation"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "過去チャットの600G・5～6スルー等のAI提案は未検証の運用目安であり、このDBには採用していない。"
+      }
+    },
+    {
+      "id": "slot:スマスロリコリスリコイル",
+      "name": "スマスロ リコリス・リコイル",
+      "formalName": "L スマスロ リコリス・リコイル KX",
+      "aliases": [
+        "スマスロ リコリス・リコイル"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロリコリスリコイル",
+        "machineName": "スマスロ リコリス・リコイル",
+        "formalName": "L スマスロ リコリス・リコイル KX",
+        "aliases": [
+          "スマスロ リコリス・リコイル",
+          "L スマスロ リコリス・リコイル KX",
+          "L リコリス・リコイル",
+          "スマスロリコリスリコイル"
+        ],
+        "generation": "スマスロ リコリス・リコイル（既存DBの型式: L スマスロ リコリス・リコイル KX）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井と内部状態はリセットされ、ゲーム数はランダムに加算される。",
+        "carryover": "据え置きでは天井までの蓄積、内部状態、ゲーム数を引き継ぐ。",
+        "resetBenefits": "CZ間天井250G、AT間天井600G+αに短縮。AT間到達では成功濃厚のCZを経由する。初期のゲーム数加算あり。",
+        "ceilingConditions": "通常のAT終了後はCZ間600G、AT間850G+α。リセット時とAT駆け抜け時はCZ間250G・AT間600G+α。上位CZ失敗後はAT間250G+α。",
+        "requiredObservations": [],
+        "observationRequirements": [
+          "CZ間とAT間の各ゲーム数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "直前のATが駆け抜けか、上位CZ失敗後か：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "CZ間とAT間の各ゲーム数",
+          "直前のATが駆け抜けか、上位CZ失敗後か"
+        ],
+        "unknowns": [
+          "初期加算の実際の値",
+          "写真だけから内部状態は特定不可"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜スマスロ リコリス・リコイル｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1166/38720/",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "なな徹｜スマスロ リコリス・リコイル｜通常時・天井条件の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1166/",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロ化物語",
+      "name": "スマスロ 化物語",
+      "formalName": "L スマスロ化物語 KH",
+      "aliases": [
+        "スマスロ 化物語"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ化物語",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 化物語"
+        ],
+        "generation": "スマスロ 化物語。既存設置DBの型式：L スマスロ化物語 KH。他世代へ適用しない。",
+        "resetSpec": "設定変更でゲーム数・内部状態・解呪連モード・有利区間を初期化する。",
+        "carryover": "据え置きではゲーム数の進行、内部状態、解呪連モード、有利区間を引き継ぐ。",
+        "resetBenefits": "ゲーム数天井600Gへ短縮。変更後50G消化でモードBのHIGHへ移行濃厚。",
+        "ceilingConditions": "リセット後600GでATと倍倍チャンス。通常上限はこの記録では不明。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "解呪連モードやHIGHの示唆"
+        ],
+        "unknowns": [
+          "現在の内部状態・解呪連モード"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 化物語 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1055/33280/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ北斗の拳転生の章2",
+      "name": "スマスロ 北斗の拳 転生の章2",
+      "formalName": "L スマスロ北斗の拳 転生の章2MW",
+      "aliases": [
+        "スマスロ 北斗の拳 転生の章2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ北斗の拳転生の章2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 北斗の拳 転生の章2"
+        ],
+        "generation": "スマスロ 北斗の拳 転生の章2。既存設置DBの型式：L スマスロ北斗の拳 転生の章2MW。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・モード・あべし数・伝承モードを初期化する。",
+        "carryover": "据え置きでは天井の進行、内部状態、モード、あべし数、伝承モードを引き継ぐ。",
+        "resetBenefits": "天井が最大1280あべしに短縮。内部あべしのランダム加算とモード・高確等の再抽選がある。",
+        "ceilingConditions": "リセット時最大1280あべしでAT。あべしは実ゲーム数とは異なり、ランプG数をそのまま引かない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶あべし数",
+          "AT後からの回転数",
+          "伝承や天破の示唆"
+        ],
+        "unknowns": [
+          "表示あべしと内部加算分の差",
+          "現在の内部モード・伝承状態"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 北斗の拳 転生の章2 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1059/33026/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ攻殻機動隊",
+      "name": "スマスロ 攻殻機動隊",
+      "formalName": "L スマスロ攻殻機動隊 ZS",
+      "aliases": [
+        "スマスロ 攻殻機動隊"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ攻殻機動隊",
+        "machineName": "スマスロ 攻殻機動隊",
+        "formalName": "L スマスロ攻殻機動隊 ZS",
+        "aliases": [
+          "スマスロ 攻殻機動隊",
+          "L スマスロ攻殻機動隊 ZS",
+          "L 攻殻機動隊"
+        ],
+        "generation": "スマスロ 攻殻機動隊（既存DBの型式: L スマスロ攻殻機動隊 ZS）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数をリセットして内部G数を加算。モードをリセット、内部状態を再抽選し、殲滅ポイント加算・殲滅テーブル2以上で開始。",
+        "carryover": "電源OFF/ONでは天井G数・モード・内部状態・殲滅ポイント・殲滅テーブルを引き継ぐ。",
+        "resetBenefits": "CZ天井は最大350G+α、AT天井は699Gに短縮。殲滅ポイント加算等もある。",
+        "ceilingConditions": "通常のCZ天井は550G+α、AT天井は999G。設定変更後はCZ350G+α・AT699G。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。"
+        ],
+        "unknowns": [
+          "現在の内部モード・殲滅テーブルと非表示ポイント"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロ 攻殻機動隊｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4659/1/112778",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロ新鬼武者3",
+      "name": "スマスロ 新鬼武者3",
+      "formalName": "L新鬼武者3SA",
+      "aliases": [
+        "スマスロ 新鬼武者3"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ新鬼武者3",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 新鬼武者3"
+        ],
+        "generation": "スマスロ 新鬼武者3。既存設置DBの型式：L新鬼武者3SA。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "液晶の周期・BP",
+          "AT間G数"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "ランプG数とAT間G数の対応"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・モード・G数・バッサリポイント・周期・有利区間を初期化する。",
+        "carryover": "据え置きでは天井進行・内部状態・モード・G数・バッサリポイント・周期・有利区間を引き継ぐ。",
+        "resetBenefits": "周期天井は最大4周期に短縮、初回周期は最大222BP。",
+        "ceilingConditions": "ゲーム数天井1000G+αは設定変更でも変わらない。短縮対象は周期天井。初回最大222BP、2周期目以降は最大666BP。G数・BP・周期を分ける。",
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 新鬼武者3 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1015/31931/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スマスロ東京リベンジャーズ",
+      "name": "スマスロ 東京リベンジャーズ",
+      "formalName": "L スマスロ東京リベンジャーズ ZF",
+      "aliases": [
+        "スマスロ 東京リベンジャーズ"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ東京リベンジャーズ",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 東京リベンジャーズ"
+        ],
+        "generation": "スマスロ 東京リベンジャーズ。既存設置DBの型式：L スマスロ東京リベンジャーズ ZF。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・モード・ゲーム数・ポイント・周期を初期化する。",
+        "carryover": "据え置きは各進行・蓄積・モードを引き継ぐ。液晶は0G/0pt/1周期目となり、表示だけでは内部持越しを判断できない。",
+        "resetBenefits": "天井900Gに短縮。モードと初当たりのAT期待度が優遇され、初回規定ポイント200pt。",
+        "ceilingConditions": "変更後ゲーム数天井900G。通常条件・スルー条件の上限はこの記録では不明。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "周期ポイントと周期数",
+          "直前ボーナス/AT状態"
+        ],
+        "unknowns": [
+          "内部モードと実際の持越し量"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 東京リベンジャーズ 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1014/31681/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ獣王",
+      "name": "スマスロ 獣王",
+      "formalName": "L 獣王 XZ",
+      "aliases": [
+        "スマスロ 獣王"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ獣王",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 獣王"
+        ],
+        "generation": "スマスロ 獣王。既存設置DBの型式：L 獣王 XZ。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・有利区間をリセットする。",
+        "carryover": "据え置きは天井の進行・内部状態・有利区間を引き継ぐ。",
+        "resetBenefits": "最大599Gへ天井短縮。サバ連に入るまで短縮が続き、SC単発終了でも継続する。",
+        "ceilingConditions": "通常最大999G、リセット後サバ連まで最大599G。SC/BIG/REGのいずれかに当選。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "現在G数",
+          "直前SCが単発かサバ連か",
+          "潜伏状態"
+        ],
+        "unknowns": [
+          "現在の内部状態",
+          "朝一ステージ"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 獣王 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1232/39331/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ甲鉄城のカバネリ海門(うなと)決戦",
+      "name": "スマスロ 甲鉄城のカバネリ 海門(うなと)決戦",
+      "formalName": "L 甲鉄城のカバネリ 海門決戦 XX",
+      "aliases": [
+        "スマスロ 甲鉄城のカバネリ 海門(うなと)決戦"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ甲鉄城のカバネリ海門(うなと)決戦",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 甲鉄城のカバネリ 海門(うなと)決戦"
+        ],
+        "generation": "スマスロ 甲鉄城のカバネリ 海門(うなと)決戦。既存設置DBの型式：L 甲鉄城のカバネリ 海門決戦 XX。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・内部状態・有利区間をリセットする。",
+        "carryover": "据え置きでは天井の進行と内部状態・有利区間を引き継ぐ。",
+        "resetBenefits": "ゲーム数天井が596G、周期天井が最大4周期に短縮。",
+        "ceilingConditions": "リセット時596Gまたは最大4周期でエピソードボーナス、その後ST濃厚。通常条件の上限はこの記録では不明。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス/ST後のG数",
+          "現在周期とカバネポイント",
+          "サブ液晶の背景"
+        ],
+        "unknowns": [
+          "朝一ステージ",
+          "表示と内部の周期・G数の対応"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロ 甲鉄城のカバネリ 海門(うなと)決戦 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1097/35407/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ秘宝伝",
+      "name": "スマスロ 秘宝伝",
+      "formalName": "L/スマスロ秘宝伝/PA7",
+      "aliases": [
+        "スマスロ 秘宝伝"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ秘宝伝",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ 秘宝伝"
+        ],
+        "generation": "既存DB：スマスロ 秘宝伝／型式 L/スマスロ秘宝伝/PA7。同名旧作・別世代へ流用しない。",
+        "resetSpec": "ゲーム数・ポイント・伝説モードを初期化。",
+        "carryover": "据え置きはゲーム数・ポイント・伝説モードを引き継ぐ。",
+        "resetBenefits": "ゲーム数天井が499G+αに短縮。",
+        "ceilingConditions": "設定変更後499G+α。ポイントとゲーム数は別々に扱う。通常時上限は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶ポイント・伝説モード示唆があれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1074/33804/",
+            "title": "なな徹 スマスロ 秘宝伝 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロスーパーブラックジャック",
+      "name": "スマスロスーパーブラックジャック",
+      "formalName": "LスーパーブラックジャックSLDC",
+      "aliases": [
+        "スマスロスーパーブラックジャック"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロスーパーブラックジャック",
+        "machineName": "スマスロスーパーブラックジャック",
+        "formalName": "LスーパーブラックジャックSLDC",
+        "aliases": [
+          "スマスロスーパーブラックジャック",
+          "LスーパーブラックジャックSLDC",
+          "L スーパーブラックジャック"
+        ],
+        "generation": "スマスロスーパーブラックジャック（既存DBの型式: LスーパーブラックジャックSLDC）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数とスイカ回数をリセットし、内部状態を再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・スイカ回数・内部状態を引き継ぐ。",
+        "resetBenefits": "BIG間天井が通常999G+αから設定変更後666G+αへ短縮。",
+        "ceilingConditions": "BIG間999G+αでBIG。設定変更後は666G+α。通常はREG4連続後の次回ボーナスがBIG。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "BIG間G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "REG連続回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "BIG間G数",
+          "REG連続回数"
+        ],
+        "unknowns": [
+          "設定変更時のREG連続回数の扱い・現在の内部状態"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロスーパーブラックジャック｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2669/2",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロスーパーリオエース2",
+      "name": "スマスロスーパーリオエース2",
+      "formalName": "Lパチスロスーパーリオエース2ND02H",
+      "aliases": [
+        "スマスロスーパーリオエース2"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロスーパーリオエース2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロスーパーリオエース2"
+        ],
+        "generation": "既存DB：スマスロスーパーリオエース2／型式 Lパチスロスーパーリオエース2ND02H。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態・ハワードカウンター・リバースポイントを初期化。",
+        "carryover": "据え置きは天井・内部状態・ハワードカウンター・リバースポイントを引き継ぐ。",
+        "resetBenefits": "ボーナス間500G+α、4スルー後5回目BIGでAT。リバースポイント初期値とハワードゲーム移行が優遇。",
+        "ceilingConditions": "ゲーム数とボーナススルー回数の天井を区別。通常時上限は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数が分かれば比較を改善できる",
+          "ボーナススルー回数やハワードカウンターがあれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1143/36739/",
+            "title": "なな徹 スーパーリオエース2 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロバジリスク~甲賀忍法帖~絆2天膳blackedition",
+      "name": "スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION",
+      "formalName": "L/バジリスク絆2〜天膳〜/ZN",
+      "aliases": [
+        "スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロバジリスク~甲賀忍法帖~絆2天膳blackedition",
+        "machineName": "スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION",
+        "formalName": "L/バジリスク絆2〜天膳〜/ZN",
+        "aliases": [
+          "スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION",
+          "L/バジリスク絆2〜天膳〜/ZN",
+          "バジリスク絆2 天膳 BLACK EDITION",
+          "天膳 BLACK EDITION"
+        ],
+        "generation": "スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION（既存DBの型式: L/バジリスク絆2〜天膳〜/ZN）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数・BC回数をリセットし、モード・内部状態・宿怨ポイントは再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・BC回数・モード・内部状態・宿怨ポイントを引き継ぐ。",
+        "resetBenefits": "宿怨ポイント等を再抽選する。再抽選分布や一律の有利不利は不明。",
+        "ceilingConditions": "BC間333G+αでBC、AT間最大8回目のBCでAT。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "BC回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "BC回数"
+        ],
+        "unknowns": [
+          "再抽選分布・現在の内部モードや宿怨ポイント"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜スマスロバジリスク~甲賀忍法帖~絆2 天膳 BLACK EDITION｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4200/1/98849",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:スマスロパリピ孔明",
+      "name": "スマスロパリピ孔明",
+      "formalName": "Lパチスロパリピ孔明YE05H",
+      "aliases": [
+        "スマスロパリピ孔明"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロパリピ孔明",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロパリピ孔明"
+        ],
+        "generation": "スマスロパリピ孔明。既存設置DBの型式：Lパチスロパリピ孔明YE05H。他世代へ適用しない。",
+        "resetSpec": "設定変更でゲーム数・内部状態/モード・ステージチェンジ回数をリセットする。",
+        "carryover": "据え置きでは天井・ゲーム数・内部状態/モード・ステージチェンジ回数を引き継ぐ。表示は0G/0回になる場合があり内部と区別する。",
+        "resetBenefits": "ボーナス間天井428Gへ短縮し、無中生有ポイントの初期値に優遇がある。",
+        "ceilingConditions": "ボーナス間天井は通常1009G、変更後428G。CZ間天井とは別。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数",
+          "CZの周期数",
+          "無中生有ポイント示唆"
+        ],
+        "unknowns": [
+          "内部ポイント初期値",
+          "表示リセット前の内部G数"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 スマスロパリピ孔明 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1222/39293/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロモンキーターンv",
+      "name": "スマスロモンキーターンV",
+      "formalName": "Lモンキーターン5CE",
+      "aliases": [
+        "スマスロモンキーターンV"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロモンキーターンv",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロモンキーターンV"
+        ],
+        "generation": "既存DB：スマスロモンキーターンV／型式 Lモンキーターン5CE。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更でゲーム数・周期・激走ポイント・内部状態を初期化。",
+        "carryover": "据え置きはゲーム数・周期・激走ポイント・状態を持ち越す。液晶は0G・0pt・1周期表示でも内部持越しがある。",
+        "resetBenefits": "ゲーム数天井495G+α、周期天井4周期、激走チャージ間81G+αに短縮。非有利区間のレア小役によるモード優遇あり。",
+        "ceilingConditions": "変更後の各天井を区別。通常時の上限値は今回この項目では未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/644/18025/",
+            "title": "なな徹 モンキーターンV 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ北斗の拳",
+      "name": "スマスロ北斗の拳",
+      "formalName": "L パチスロ北斗の拳AD XR",
+      "aliases": [
+        "スマスロ北斗の拳"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ北斗の拳",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ北斗の拳"
+        ],
+        "generation": "既存DB：スマスロ北斗の拳／型式 L パチスロ北斗の拳AD XR。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更で天井蓄積とモードを初期化し、モード移行抽選を行う。",
+        "carryover": "据え置きは天井とモードを持ち越す。朝一ステージは設定変更・据置とも同様で見た目だけの判別不可。",
+        "resetBenefits": "設定変更後は天井が800G+αへ短縮。",
+        "ceilingConditions": "変更後800G+α。通常上限は今回の参照項目では数値未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/514/13776/",
+            "title": "なな徹 スマスロ北斗の拳 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+      "name": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+      "formalName": "L 防振り FN",
+      "aliases": [
+        "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。"
+        ],
+        "generation": "スマスロ痛いのは嫌なので防御力に極振りしたいと思います。。既存設置DBの型式：L 防振り FN。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数",
+          "初当たりが単発継続か",
+          "防御状態の表示・示唆"
+        ],
+        "unknowns": [
+          "内部G加算値",
+          "現在の防御状態",
+          "短縮状態が続いているか"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で内部状態・防御状態・有利区間を初期化し、天井を短縮する。",
+        "carryover": "据え置きでは天井進行・内部状態・防御状態・有利区間を引き継ぐ。",
+        "resetBenefits": "天井450G+αまたは650G+α、内部G数ランダム加算。中段チェリーの抽選と設定変更時専用の極・直撃高確に恩恵がある。",
+        "ceilingConditions": "リセット後450G+αまたは650G+α。初当たりの単発が続く間は短縮を継続する。G数加算があるため液晶・ランプ数値の意味を区別する。通常最大天井はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 スマスロ痛いのは嫌なので防御力に極振りしたいと思います。 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/764/21886/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スマスロ頭文字d2nd",
+      "name": "スマスロ頭文字D 2nd",
+      "formalName": "L スマスロ頭文字D2nd YR",
+      "aliases": [
+        "スマスロ頭文字D 2nd"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スマスロ頭文字d2nd",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スマスロ頭文字D 2nd"
+        ],
+        "generation": "スマスロ頭文字D 2nd。既存設置DBの型式：L スマスロ頭文字D2nd YR。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "前回AT終了からのG数",
+          "液晶G数・LB示唆"
+        ],
+        "unknowns": [
+          "内部加算G数",
+          "現在のLBモード・LBランク"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・内部状態・LBモード・LBランク・有利区間を初期化する。",
+        "carryover": "据え置きでは天井進行・内部状態・LBモード・LBランク・有利区間を引き継ぐ。",
+        "resetBenefits": "天井が一部で299G+αに短縮され、内部ゲーム数をランダム加算。LBランク・初回のLBシナリオにも優遇がある。",
+        "ceilingConditions": "リセットで必ず299Gになるわけではない。加算後の内部G数とデータランプの実G数が一致しない場合がある。通常最大天井はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 スマスロ頭文字D 2nd 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/818/24492/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スロットソードアートオンラインii",
+      "name": "スロット ソードアート・オンラインII",
+      "formalName": "L/ソードアート・オンラインII/PA1",
+      "aliases": [
+        "スロット ソードアート・オンラインII"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スロットソードアートオンラインii",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スロット ソードアート・オンラインII"
+        ],
+        "generation": "スロット ソードアート・オンラインII。既存設置DBの型式：L/ソードアート・オンラインII/PA1。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "CZ間の実G数",
+          "死銃モード示唆"
+        ],
+        "unknowns": [
+          "現在の内部状態・GGOモード",
+          "死銃モードの詳細抽選値"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・モード・有利区間を初期化し、内部状態とGGOモードを抽選する。",
+        "carryover": "据え置きでは天井・モード・有利区間を引き継ぐ。",
+        "resetBenefits": "初回CZ間天井を実ゲーム数256G+αに短縮し、死銃モード移行を優遇する。",
+        "ceilingConditions": "設定変更後の初回CZは実G数256G+α。液晶ポイントやAT間天井と同じ数値に扱わない。通常CZ天井はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 スロット ソードアート・オンラインII 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1158/37244/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スロットワールドダイスター",
+      "name": "スロット ワールドダイスター",
+      "formalName": "L/ワールドダイスター/PA3",
+      "aliases": [
+        "スロット ワールドダイスター"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:スロットワールドダイスター",
+        "status": "draft",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "スロット ワールドダイスター"
+        ],
+        "generation": "既存DB：スロット ワールドダイスター／型式 L/ワールドダイスター/PA3。同名旧作・別世代へ流用しない。",
+        "resetSpec": "設定変更時の天井短縮・モード等の抽選を確認。各状態の初期化範囲は不明。",
+        "carryover": "不明。今回確認した公開ページには据え置き時の持越し条件の明記がない。",
+        "resetBenefits": "600G+αに短縮。天井到達時のオペラ変換・ST増加抽選、ラッキーモード、CZポイント初期値、努力の破片の抽選がある。",
+        "ceilingConditions": "変更後600G+α。通常時上限・持越し時の適用は今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "据え置き時の天井・モード・CZポイント・努力の破片の持越しは不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/1177/38178/",
+            "title": "なな徹 ワールドダイスター 朝一・リセット恩恵",
+            "type": "analysis",
+            "scope": "reset_only"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:チバリヨ2プラス",
+      "name": "チバリヨ2プラス",
+      "formalName": "Lチバリヨ2プラスZC",
+      "aliases": [
+        "チバリヨ2プラス"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:チバリヨ2プラス",
+        "machineName": "チバリヨ2プラス",
+        "formalName": "Lチバリヨ2プラスZC",
+        "aliases": [
+          "チバリヨ2プラス",
+          "Lチバリヨ2プラスZC"
+        ],
+        "generation": "チバリヨ2プラス（既存DBの型式: Lチバリヨ2プラスZC）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数・チェリー回数をリセットし、モードを再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・チェリー回数・モードを引き継ぐ。",
+        "resetBenefits": "設定変更後は天井が350Gまたは600Gとなる可能性がある。短縮を必ず選ぶとは断定しない。",
+        "ceilingConditions": "通常最大999G+αまたは最大45回のチェリーでボーナス。モード等により350G・600Gの天井がある。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "チェリー回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "チェリー回数"
+        ],
+        "unknowns": [
+          "現在のモード・設定変更後の短縮選択の確定有無"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜チバリヨ2プラス｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2672/2",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          },
+          {
+            "title": "パチ＆スロ必勝本｜チバリヨ2プラス｜通常時・天井条件の公開解析",
+            "url": "https://p.hisshobon.jp/machine/4435/1/106672",
+            "type": "analysis",
+            "scope": "天井・通常時仕様の補足。期待値金額・遊技開始ライン・個別設定値は採用しない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:パチスロかぐや様は告らせたい",
+      "name": "パチスロ かぐや様は告らせたい",
+      "formalName": "Lかぐや様は告らせたいjA",
+      "aliases": [
+        "パチスロ かぐや様は告らせたい"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:パチスロかぐや様は告らせたい",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "パチスロ かぐや様は告らせたい"
+        ],
+        "generation": "既存DB：パチスロ かぐや様は告らせたい／型式 Lかぐや様は告らせたいjA。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態・モードを初期化。",
+        "carryover": "据え置きは天井・内部状態・モードを引き継ぐ。",
+        "resetBenefits": "ボーナス天井800G+α。通常Bの初期選択が優遇。",
+        "ceilingConditions": "通常はBIG後1100G+α・REG後900G+α。設定変更後800G+α。引き戻し等の短いモードを否定できず、ランプだけで最大天井までの距離を確定しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数が分かれば比較を改善できる",
+          "直前がBIG/REGかと終了画面があれば比較を改善できる"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/804/23724/",
+            "title": "なな徹 かぐや様は告らせたい 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:パチスロからくりサーカス",
+      "name": "パチスロ からくりサーカス",
+      "formalName": "LからくりサーカスG",
+      "aliases": [
+        "パチスロ からくりサーカス"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:パチスロからくりサーカス",
+        "machineName": "パチスロ からくりサーカス",
+        "formalName": "LからくりサーカスG",
+        "aliases": [
+          "パチスロ からくりサーカス",
+          "LからくりサーカスG",
+          "L からくりサーカス"
+        ],
+        "generation": "パチスロ からくりサーカス（既存DBの型式: LからくりサーカスG）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "天井G数・CZ回数・マリオネット連モードをリセットし、モード・内部状態・からくりレア役規定回数を再抽選。",
+        "carryover": "電源OFF/ONでは天井G数・CZ回数・モード・内部状態等を引き継ぐ。液晶G数と歯車表示は0になっても内部的に持ち越す。",
+        "resetBenefits": "モード等を再抽選。公開した天井表のみから一律の短縮・有利不利は決められない。",
+        "ceilingConditions": "通常最大1200GでCZまたはAT。機械仕掛けの神4回失敗後、5回目はAT。AT間2500GではATと成功確定の激情ジャッジ。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT間G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "CZ失敗回数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "AT間G数",
+          "CZ失敗回数"
+        ],
+        "unknowns": [
+          "表示0Gと内部累積G数の差・再抽選の分布・現在の内部モード"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜パチスロ からくりサーカス｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/machine/4098/1/94915",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:パチスロ交響詩篇エウレカセブンhi-evolutionzerot...",
+      "name": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO T...",
+      "formalName": "S エウレカセブンHIEVO XS",
+      "aliases": [
+        "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO T..."
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:パチスロ交響詩篇エウレカセブンhi-evolutionzerot...",
+        "machineName": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO T...",
+        "formalName": "S エウレカセブンHIEVO XS",
+        "aliases": [
+          "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO T...",
+          "S エウレカセブンHIEVO XS",
+          "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO TYPE-ART"
+        ],
+        "generation": "パチスロ交響詩篇エウレカセブン HI-EVOLUTION ZERO T...（既存DBの型式: S エウレカセブンHIEVO XS）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "設定変更では有利区間・内部状態をリセットし、高確への移行抽選が行われる。",
+        "carryover": "据え置きでは有利区間・内部状態を引き継ぐ。",
+        "resetBenefits": "天井短縮は非該当（天井なし）。設定変更時に高確へ移行する可能性がある。高確確定とは扱わない。",
+        "ceilingConditions": "天井非搭載。なな徹の機種本文で確認。",
+        "requiredObservations": [
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。"
+        ],
+        "unknowns": [
+          "閉店時の非表示の内部状態・実際に高確へ移行するか"
+        ],
+        "sources": [
+          {
+            "title": "なな徹｜エウレカセブン HI-EVOLUTION ZERO TYPE-ART｜朝一・設定変更時の挙動や恩恵",
+            "url": "https://nana-press.com/kaiseki/machine/634/17391/",
+            "type": "analysis",
+            "scope": "設定変更・据え置き時の内部状態と高確移行抽選。個別設定値・期待値金額は採用しない。"
+          },
+          {
+            "title": "なな徹｜エウレカセブン HI-EVOLUTION ZERO TYPE-ART｜解析情報まとめ",
+            "url": "https://nana-press.com/kaiseki/machine/634/",
+            "type": "analysis",
+            "scope": "A+ARTという分類・2023年の世代・天井非搭載の確認。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "必勝本の上部と詳細欄の天井表記不一致に対し、なな徹本文で天井非搭載と確認。内部仕様は公開解析に基づき、メーカー確定値とは区別。"
+      }
+    },
+    {
+      "id": "slot:マジカルハロウィン8",
+      "name": "マジカルハロウィン8",
+      "formalName": "Lマジカルハロウィン8FE",
+      "aliases": [
+        "マジカルハロウィン8"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:マジカルハロウィン8",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "マジカルハロウィン8"
+        ],
+        "generation": "既存DB：マジカルハロウィン8／型式 Lマジカルハロウィン8FE。同名旧作・別世代へ流用しない。",
+        "resetSpec": "天井・内部状態を初期化。",
+        "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+        "resetBenefits": "天井が最大600G+αに短縮され、100Gなどの振り分けもある。変更後天井の恩恵はART＋ストック2個。",
+        "ceilingConditions": "設定変更後は規定G数で詠唱チャレンジへ。通常上限・個別の振り分けは今回未確認。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数が分かれば比較を改善できる",
+          "閉店時に詠唱/ART/通常のどれか分かれば追加照合"
+        ],
+        "unknowns": [
+          "写真だけでは内部状態・再抽選結果は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/627/18066/",
+            "title": "なな徹 マジカルハロウィン8 朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:ローティス",
+      "name": "ローティス",
+      "formalName": "LローティスTN",
+      "aliases": [
+        "ローティス"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:ローティス",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "ローティス"
+        ],
+        "generation": "ローティス。既存設置DBの型式：LローティスTN。他世代へ適用しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ボーナス間G数",
+          "モード示唆・前回ボーナス種別"
+        ],
+        "unknowns": [
+          "現在のモード・SBBストック",
+          "SBBストックの電源断持越し詳細"
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。",
+        "resetSpec": "設定変更で天井・モード・G数・有利区間を初期化し、特殊モード移行とSBBストックを抽選する。",
+        "carryover": "据え置きでは天井進行・モード・G数・有利区間を引き継ぐ。SBBストックの電源断持越し詳細は不明。",
+        "resetBenefits": "朝一（天井200G）またはチャンス（400G）へ移行する場合がある。SBBストック0～5個の抽選も行う。",
+        "ceilingConditions": "朝一200G、チャンス400G。リセットでも通常A/Bの選択があり、必ず短い天井とは限らない。通常モードの天井詳細はこの資料では不明。",
+        "sources": [
+          {
+            "title": "なな徹 ローティス 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1182/37729/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:吉宗",
+      "name": "吉宗",
+      "formalName": "L/ヨシムネS/SC2",
+      "aliases": [
+        "吉宗"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:吉宗",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "吉宗"
+        ],
+        "generation": "2025年の吉宗／既存型式 L/ヨシムネS/SC2。真打・旧作へ流用しない。",
+        "resetSpec": "ゲーム数・内部状態・通常モード・鷹狩りモードを初期化。",
+        "carryover": "据え置きはゲーム数・内部状態・通常モード・鷹狩りモードを引き継ぐ。",
+        "resetBenefits": "不明。出典でも設定変更時の恩恵・初期モードは調査中。",
+        "ceilingConditions": "変更後999G+α到達は実戦上の観測で、天井短縮なしの確定仕様としては登録しない。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "ランプG数の計数対象が分かれば比較を改善できる",
+          "液晶・終了画面や当選履歴があれば追加照合"
+        ],
+        "unknowns": [
+          "設定変更時の恩恵・モード振り分け・天井短縮有無は不明"
+        ],
+        "sources": [
+          {
+            "url": "https://nana-press.com/kaiseki/machine/920/29008/",
+            "title": "なな徹 吉宗（2025年）朝一・設定変更",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページの記載を確認。解析編集部の情報をメーカー公表仕様と区別し、独自のリセットライン・客向け狙い目は採用しない。"
+      }
+    },
+    {
+      "id": "slot:戦国コレクション6",
+      "name": "戦国コレクション6",
+      "formalName": "L戦国コレクション6KS",
+      "aliases": [
+        "戦国コレクション6"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:戦国コレクション6",
+        "machineName": "戦国コレクション6",
+        "formalName": "L戦国コレクション6KS",
+        "aliases": [
+          "戦国コレクション6",
+          "L戦国コレクション6KS"
+        ],
+        "generation": "戦国コレクション6（既存DBの型式: L戦国コレクション6KS）に限定。別世代・別型式へ転用しない。",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "resetSpec": "G数・周期・コレポイント・リプレイ回数・ガチャチケットをリセットし、モード・裏モードを再抽選。",
+        "carryover": "電源OFF/ONではG数・周期・コレポイント・リプレイ回数・ガチャチケット・モード・裏モードを引き継ぐ。",
+        "resetBenefits": "AT当選までの周期天井が通常最大6周期から設定変更後最大3周期へ短縮。",
+        "ceilingConditions": "通常時999G+αまたは最大6周期でAT。設定変更後の周期天井は最大3周期。",
+        "requiredObservations": [
+          "液晶G数",
+          "閉店時状態"
+        ],
+        "observationRequirements": [
+          "液晶G数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "周期数：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "閉店時状態：閉店時の観測と既存仕様を照合するため。読めなければ不明とし、内部状態を補完しない。",
+          "周期数"
+        ],
+        "unknowns": [
+          "現在の非表示モード・裏モード"
+        ],
+        "sources": [
+          {
+            "title": "パチ＆スロ必勝本｜戦国コレクション6｜天井・設定変更・持ち越しの公開解析",
+            "url": "https://p.hisshobon.jp/vpage/2779/1",
+            "type": "analysis",
+            "scope": "公開解析本文の設定変更・据え置き（電源OFF/ON）・天井。メーカー確定仕様ではない。"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "設定変更と持ち越しの公開解析を本文で確認。残る不明点はunknownsを参照。"
+      }
+    },
+    {
+      "id": "slot:真打吉宗",
+      "name": "真打 吉宗",
+      "formalName": "L/真打吉宗/A1",
+      "aliases": [
+        "真打 吉宗"
+      ],
+      "identityStatus": "existing_db",
+      "knowledge": {
+        "machineId": "slot:真打吉宗",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "aliases": [
+          "真打 吉宗"
+        ],
+        "generation": "真打 吉宗。既存設置DBの型式：L/真打吉宗/A1。他世代へ適用しない。",
+        "resetSpec": "設定変更で天井・モード・夜回りポイント・周期数を初期化する。",
+        "carryover": "据え置きでは各蓄積・モードを引き継ぐ。朝一の夜回りカウンター表示は初期状態となるため内部と区別する。",
+        "resetBenefits": "AT間天井1000G+αへ短縮。CZモードと夜回りポイントモードの高モード選択が優遇される。",
+        "ceilingConditions": "AT間は通常1500G、変更後1000G+αでAT。CZ周期とは別。",
+        "requiredObservations": [
+          "データランプG数"
+        ],
+        "observationRequirements": [
+          "AT間G数",
+          "周期・夜回りポイント",
+          "CZ/AT終了後の状態"
+        ],
+        "unknowns": [
+          "実際のモード",
+          "内部周期と初期表示の差"
+        ],
+        "sources": [
+          {
+            "title": "なな徹 真打 吉宗 朝一・設定変更（編集部の解析情報）",
+            "url": "https://nana-press.com/kaiseki/machine/1124/36101/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ],
+        "checkedAt": "2026-10-25",
+        "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
+      }
+    }
+  ],
+  "comparisonRules": [
+    {
+      "id": "slot:l東京喰種:CZ間の実ゲーム数",
+      "machineId": "slot:l東京喰種",
+      "counter": "CZ間の実ゲーム数",
+      "normalMaximum": 600,
+      "resetMaximum": 200,
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/889/27253/",
+        "https://nana-press.com/kaiseki/machine/889/27550/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lultraman最終決戦:AT間の実ゲーム数",
+      "machineId": "slot:lultraman最終決戦",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 1500,
+      "resetMaximum": 1000,
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1195/37661/",
+        "https://nana-press.com/kaiseki/machine/1195/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lultraman最終決戦:CZ間の実ゲーム数",
+      "machineId": "slot:lultraman最終決戦",
+      "counter": "CZ間の実ゲーム数",
+      "normalMaximum": 700,
+      "resetMaximum": 500,
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1195/37661/",
+        "https://nana-press.com/kaiseki/machine/1195/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lタクトオーパスデスティニー:CZ間の実ゲーム数",
+      "machineId": "slot:lタクトオーパスデスティニー",
+      "counter": "CZ間の実ゲーム数",
+      "normalMaximum": 500,
+      "resetMaximum": 300,
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4721/1/114543",
+        "https://p.hisshobon.jp/machine/4721/1/115647"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lタクトオーパスデスティニー:AT間の実ゲーム数",
+      "machineId": "slot:lタクトオーパスデスティニー",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 999,
+      "resetMaximum": 699,
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4721/1/114543",
+        "https://p.hisshobon.jp/machine/4721/1/115647"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lパチスロ戦姫絶唱シンフォギア正義の歌:AT間の実ゲーム数",
+      "machineId": "slot:lパチスロ戦姫絶唱シンフォギア正義の歌",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 777,
+      "resetMaximum": 498,
+      "sourceURLs": [
+        "https://p.hisshobon.jp/vpage/2624/2",
+        "https://nana-press.com/kaiseki/machine/760/22574/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:lラブ嬢3〜wご指名はいかがですか?〜:AT間の実ゲーム数",
+      "machineId": "slot:lラブ嬢3〜wご指名はいかがですか?〜",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 750,
+      "resetMaximum": 500,
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/651/18114/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:スマスロ攻殻機動隊:CZ間の実ゲーム数",
+      "machineId": "slot:スマスロ攻殻機動隊",
+      "counter": "CZ間の実ゲーム数",
+      "normalMaximum": 550,
+      "resetMaximum": 350,
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4659/1/112778"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:スマスロ攻殻機動隊:AT間の実ゲーム数",
+      "machineId": "slot:スマスロ攻殻機動隊",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 999,
+      "resetMaximum": 699,
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4659/1/112778"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    },
+    {
+      "id": "slot:真打吉宗:AT間の実ゲーム数",
+      "machineId": "slot:真打吉宗",
+      "counter": "AT間の実ゲーム数",
+      "normalMaximum": 1500,
+      "resetMaximum": 1000,
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1124/36101/"
+      ],
+      "snapshotCheckedAt": "2026-10-25"
+    }
+  ],
+  "benefitGuidance": [
+    {
+      "machineId": "slot:ltoloveるダークネス",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井を650G+αに短縮し、内部通常G数をランダム加算。ポイント初期値にも抽選がある。",
+      "carryover": "据え置きでは天井進行・内部状態・有利区間を引き継ぐ。ポイント類個別の持越し条件はこの資料では不明。",
+      "ceilingConditions": "設定変更後650G+α。内部G加算があるため、ランプG数の単純比較だけでは到達までのG数を確定できない。通常最大天井はこの資料では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/752/21708/"
+      ]
+    },
+    {
+      "machineId": "slot:lultraman最終決戦",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "AT間1000G+α、CZ間500G+αに短縮。高確移行抽選あり。",
+      "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "通常はAT間1500G+α・CZ間700G+α。ボーナスなどの表示でランプがリセットされる場合はAT間/CZ間の計数を分ける。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1195/37661/",
+        "https://nana-press.com/kaiseki/machine/1195/"
+      ]
+    },
+    {
+      "machineId": "slot:lゴジラ対エヴァンゲリオン",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス天井を1000G+αから700G+α、AT当選のボーナス回数天井を最大9回から最大5回へ短縮。",
+      "carryover": "電源OFF/ONでは天井G数・ボーナス回数・内部状態を引き継ぐ。",
+      "ceilingConditions": "通常最大1000G+αでボーナス、最大9回目のボーナスでAT。設定変更後は700G+α・最大5回。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4242/1/100321"
+      ]
+    },
+    {
+      "machineId": "slot:l東京喰種",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "初回CZ天井が200G+αになる。最初の非有利区間には成立役に応じた恩恵がある。",
+      "carryover": "据え置きでは天井の進行、内部状態、モード、喰ポイント、赫眼状態を引き継ぐ。",
+      "ceilingConditions": "朝一モードのCZ天井200G+α。通常モードのCZ天井は最大600G（別途モード資料で確認）。AT天井とは別。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/889/27253/",
+        "https://nana-press.com/kaiseki/machine/889/27550/"
+      ]
+    },
+    {
+      "machineId": "slot:l真一騎当千",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "最大400G+αに短縮し、さらにゲーム数の減算抽選あり。通常Dか天国で開始。",
+      "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "変更後最大400G+α。個々の減算値や天国滞在は画像から確定しない。通常時上限は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/815/24377/"
+      ]
+    },
+    {
+      "machineId": "slot:l転生王女と天才令嬢の魔法革命",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "CZ間天井を最大310G+α、通常時ゲーム数天井を410G+αに短縮する。",
+      "carryover": "据え置きでは天井進行・内部状態・有利区間を引き継ぐ。転天ポイントの持越しは資料でも調査中。",
+      "ceilingConditions": "リセット後CZ間310G+αでCZ、通常時410G+αでボーナス。転天ポイントの準備中表示は、CZ失敗・ボーナス開始等で開放される。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1233/39362/"
+      ]
+    },
+    {
+      "machineId": "slot:lタクトオーパスデスティニー",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "CZ間天井は最大300G+α、AT間天井は699G+αに短縮。",
+      "carryover": "電源OFF/ONでは天井G数・状態・ポイント・モードを引き継ぐ。ポイント表示は???でも内部的に持ち越す。",
+      "ceilingConditions": "通常はCZ間最大500G+α・AT間999G+α。設定変更後はCZ300G+α・AT699G+α。ボーナス当選ではこれらの天井G数はリセットされない。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4721/1/114543",
+        "https://p.hisshobon.jp/machine/4721/1/115647"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロからくりサーカス2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "CZ天井の液晶ゲーム数が通常1200Gから500Gに短縮。",
+      "carryover": "据え置きでは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "CZは液晶G数と実ゲーム数を区別。公開概要では実890GのCZ天井、CZ4連続失敗後5回目、実2500GのAT天井も掲載。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1144/37428/",
+        "https://nana-press.com/kaiseki/machine/1144/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロ彼女、お借りします",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス天井が600Gに短縮。",
+      "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "通常1000G、REG後800G、設定変更時600Gでかのかりボーナス。ハートメーターは朝一シャッターで隠れるため表示だけで内部ポイントを決めない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1221/38780/",
+        "https://nana-press.com/kaiseki/machine/1221/38779/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロ炎炎ノ消防隊2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス間650G+α、炎炎ループ間1500G+αに短縮。通常E（119モード）の選択率が上昇。",
+      "carryover": "据え置きは天井・内部状態・ゲーム数・モードを引き継ぐ。",
+      "ceilingConditions": "ボーナス間と炎炎ループ間の天井を区別。通常時上限は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1088/34535/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロ革命機ヴァルヴレイヴ2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス・AT間の天井が1000Gへ短縮し、初回の周期天井が最大3周期となる。",
+      "carryover": "据え置きでは天井進行・内部状態・モード・G数・周期ポイント・有利区間を引き継ぐ。見た目のG数・ポイントは初期表示になる。",
+      "ceilingConditions": "設定変更後はボーナス・AT間1000G。周期天井は最大3周期でCZ。G数と周期ポイントを分けて扱う。通常時の最大天井はこの資料では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1040/32809/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロガールズ&パンツァー最終章",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井を500Gまたは1111Gへ振り分ける。初回ベル7回時のCZ抽選・初回CZ種別・ボコポイント初期値を優遇。",
+      "carryover": "据え置きでは天井進行・内部状態・有利区間・ボコポイントを引き継ぐ。",
+      "ceilingConditions": "設定変更時のゲーム数天井は500Gまたは1111Gで、前兆後に成功確定CZ。CZスルー天井は別に抽選する。必ず500Gへ短縮するわけではない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/678/19214/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロ戦姫絶唱シンフォギア正義の歌",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井は最大498G+αに短縮され、天国への移行が優遇される。",
+      "carryover": "電源OFF/ONでは天井G数・抜剣メーター・CZ抽選テーブルを内部的に引き継ぐ。G数とメーター表示は初期表示に戻る。",
+      "ceilingConditions": "通常時は最大777G+αでAT、天国は100G以内。設定変更後の最大天井は498G+α。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/vpage/2624/2",
+        "https://nana-press.com/kaiseki/machine/760/22574/"
+      ]
+    },
+    {
+      "machineId": "slot:lラブ嬢3〜wご指名はいかがですか?〜",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "通常Cまたは天国A/Bが選ばれ、通常Cは500G+α以内、天国は100G+αでAT天井。",
+      "carryover": "据え置きでは天井進行・内部状態・モード・有利区間・キャバポイントを引き継ぐ。表示ポイントは0ptになる。",
+      "ceilingConditions": "通常A/Bは750G、通常C500G、天国A/B100G（前兆を加える）。リセット後は通常C以上。表示キャバポイント0だけでは持越しなしと判断しない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/651/18114/"
+      ]
+    },
+    {
+      "machineId": "slot:lルパン三世大航海者の秘宝",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "AT間天井が700G+αに短縮。",
+      "carryover": "据え置きは天井・内部状態・山盛りポイントを引き継ぐ。",
+      "ceilingConditions": "ボーナスに当選してもAT非当選ならAT間G数はクリアされない。通常時上限は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/851/25845/"
+      ]
+    },
+    {
+      "machineId": "slot:l戦国乙女4戦乱に閃く炯眼の軍師",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナススルー回数を再セットするため、通常より少ないスルー回数で天井が発動する場合がある。一律のG数短縮は今回確認できない。",
+      "carryover": "据え置きでは天井G数・ボーナススルー回数・モード・内部状態を引き継ぎ、巫女カウンターも内部的に持ち越す。",
+      "ceilingConditions": "ボーナス天井は最大799G+α。ボーナスで6回連続AT非当選なら7回目はAT確定のエピソードボーナス。モードにより短い天井あり。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/597/16397/",
+        "https://nana-press.com/kaiseki/machine/597/16395/"
+      ]
+    },
+    {
+      "machineId": "slot:l戦国乙女5業火を穿つ宿焔の双刃",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "実G数天井650G+α、最大4周期へ短縮。巫女ポイントが内部でランダム減算される。",
+      "carryover": "据え置きではそれらの天井進行・状態・周期・蓄積を引き継ぐ。",
+      "ceilingConditions": "リセット後は実G数650G+αまたは最大4周期でAT。通常上限はこの記録では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1160/37316/"
+      ]
+    },
+    {
+      "machineId": "slot:l無職転生~異世界行ったら本気だす~",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス天井のステージチェンジ回数は13回、AT天井は17回へ短縮。",
+      "carryover": "据え置きでは天井・G数・ステージチェンジ回数を内部的に引き継ぐ。表示される回数は初期表示に戻るため、表示だけでは判別できない。",
+      "ceilingConditions": "通常のボーナス天井はステージチェンジ最大19回、AT天井は40回（AT濃厚のエピソードボーナス）。設定変更後は13回・17回。G数と回数は別に扱う。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1058/33840/",
+        "https://nana-press.com/kaiseki/machine/1058/33837/"
+      ]
+    },
+    {
+      "machineId": "slot:l聖闘士星矢海皇覚醒customedition",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "別項目の設定変更時の恩恵では、GBスルー回数天井、不屈の初期値、GB・CZの抽選状態、GBレベル振分けの優遇が説明されている。再抽選で実際に選ばれた値は写真から断定できず、持ち越される蓄積との比較が必要。",
+      "carryover": "同資料では電源OFF/ONのみの場合、ゲーム数とGB回数の蓄積、各抽選状態、GBレベル、不屈ポイントを持ち越す。小宇宙ポイントは表示0でも内部的に持ち越すとされる。遊技履歴の表示は消えるため内部蓄積と区別する。",
+      "ceilingConditions": "編集部調べ：通常時は最大999G+αでGB。GB8連続スルー後は次回勝利確定のGB。GB当選とAT当選を混同せず、ランプ表示がGB間の実ゲーム数かを確認して使う。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4307/1/102208",
+        "https://p.hisshobon.jp/machine/4307/1/103133"
+      ]
+    },
+    {
+      "machineId": "slot:l邪神ちゃんドロップキック",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "最大天井599Gへ短縮。ちゃんすラインのいずれか1ラインが1周期天井になる。",
+      "carryover": "据え置きでは天井・通常モード・ちゃんすラインポイントを引き継ぐ。",
+      "ceilingConditions": "通常A/Bは749G、通常Cは599G、特殊は799G。天国A/Bでは99G以内のボーナスが濃厚。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1181/38249/",
+        "https://nana-press.com/kaiseki/machine/1181/38246/"
+      ]
+    },
+    {
+      "machineId": "slot:l青春ブタ野郎はバニーガール先輩の夢を見ない",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ST間の実ゲーム数天井を通常899G+αから699G+αに短縮する。",
+      "carryover": "電源OFF/ONでは天井G数・CZスルー回数・状態・不可思議モードを引き継ぐ。思春期ポイント・かえでスタンプの持越しは不明。",
+      "ceilingConditions": "思春期1000ptまたはCZ間560G+αでCZ。ST間899G+α（設定変更後699G+α）で初当たり。CZ6連続失敗後の次回CZは成功濃厚。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4792/1/4",
+        "https://p.hisshobon.jp/machine/4792/1/12"
+      ]
+    },
+    {
+      "machineId": "slot:いざ!番長",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "チャンスA以上から開始して天井最大600G+α。御免ポイントも優遇される。",
+      "carryover": "電源OFF/ONでは天井G数・モード・内部状態・刀ポイント・御免ポイントを引き継ぐ。",
+      "ceilingConditions": "設定変更後の最大天井は600G+α。天国選択時はさらに短い。通常時の最大天井はこの資料では未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/946/29780/"
+      ]
+    },
+    {
+      "machineId": "slot:アニマルスロットドッチ",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井499GでBIG当選。赤満月移行レベル3以上。",
+      "carryover": "据え置きは天井ゲーム数・赤満月移行レベルを引き継ぐ。",
+      "ceilingConditions": "通常時の天井は最大999G、変更時499G。ノーマルタイプとして扱わない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1126/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロとある魔術の禁書目録2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "液晶右下の消化ゲーム数天井は200G+α、左上の実ゲーム数天井は777Gに短縮。",
+      "carryover": "電源OFF/ONのみなら天井までのゲーム数・モード・状態を引き継ぐ。",
+      "ceilingConditions": "通常は右下の消化ゲーム数800G+αでCZまたはAT、左上の実ゲーム数1200GでAT。表示と実G数を別々に扱う。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4781/1/116208"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロやじきた道中記参る!",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "特殊Aテーブル、関所チャレンジの勝率、初回あっぱれチャンスのキャラ抽選が優遇。",
+      "carryover": "据え置きは天井・まいるポイント・まいるモード・まいるテーブルを引き継ぐ。",
+      "ceilingConditions": "天井はまいるポイントを用いる。具体的な上限値は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1186/38338/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロゴッドイーターリザレクション",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井600G+αへ短縮。偏食因子の初期ポイント抽選あり。",
+      "carryover": "据え置きでは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "変更後600G+α。通常時天井値は今回のページでは未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/767/22719/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロストリートファイター6",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "通常B以上のモードとなり、液晶ゲーム数の最大天井が900G+αに短縮される。",
+      "carryover": "電源OFF/ONのみなら天井までのゲーム数、モード、状態を引き継ぐ。",
+      "ceilingConditions": "通常時の液晶ゲーム数は最大1000G+αでFB。FBを最大3回初回敗北すると、最大4回目のFBは初回勝利濃厚。実ゲーム数と加算された液晶G数を混同しない。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/vpage/2803/1"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロバイオハザード5",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井を666G+αに短縮する。",
+      "carryover": "据え置きでは天井進行・有利区間・内部モード・増殖アイコンを引き継ぐ。",
+      "ceilingConditions": "リセット後666G+α。通常最大天井はこの資料では不明。増殖アイコンとゲーム数天井を分ける。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/904/27844/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロバイオハザードre:3",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ゲーム数天井650G+αへ短縮。天井到達時はパンデミックチャンスを経由。",
+      "carryover": "据え置きでは天井・モードを引き継ぐ。",
+      "ceilingConditions": "設定変更後650G+α。通常時上限やCZ回数天井は今回の確認範囲では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1140/36678/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロマギアレコード魔法少女まどか☆マギカ外伝",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ポイント天井が600〜699pt+αに短縮。高確や魔法少女モードの抽選がある。",
+      "carryover": "据え置きはポイント・内部状態・魔法少女モード・穢れを引き継ぐ。",
+      "ceilingConditions": "変更後の上限699pt+α。液晶ptとデータランプG数は同一とは限らず、G数への置換をしない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/914/28429/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロモンスターハンターライズ",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ポイントモードB以上、クエストテーブル優遇、ランダム内部加算や初回ATの金冠抽選がある。",
+      "carryover": "据え置きでは天井、内部状態、カムラポイント、ポイントモード、クエストテーブル、リプレイ回数、翔蟲ポイント、金冠を引き継ぐ。",
+      "ceilingConditions": "通常ゲーム数天井・クエスト天井の詳細はこのリセット資料だけでは不明。サンブレイクとは別機種。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/837/25311/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロモンスターハンターライズ:サンブレイク",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "なな徹調べでは、設定変更時に規定リプレイ回数がランダム加算され、初回ATで盟勇クエストに当選した場合の傀異化昇格が優遇される。初当たり確率そのものや必ず出ることを示す仕様ではない。据え置きで残る蓄積と比較する。天井短縮の有無は今回確認した出典の記載だけでは不明。",
+      "carryover": "必勝本では電源OFF/ONだけならゲーム数天井・AT間CZ当選回数・状態を持ち越す。なな徹ではリプレイ回数の持ち越しも記載。メーターが？、周期が1周期目表示でも内部持ち越しがあり、見た目だけで初期化を断定しない。",
+      "ceilingConditions": "編集部調べ：CZ間333G+αでCZ、AT間999G+αでAT、AT間でCZ7回当選時は成功濃厚のCZ。別々の到達条件として扱う。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4830/1/4",
+        "https://nana-press.com/kaiseki/machine/1216/39312/",
+        "https://nana-press.com/kaiseki/machine/1216/39263/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロリコリスリコイル",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "CZ間天井250G、AT間天井600G+αに短縮。AT間到達では成功濃厚のCZを経由する。初期のゲーム数加算あり。",
+      "carryover": "据え置きでは天井までの蓄積、内部状態、ゲーム数を引き継ぐ。",
+      "ceilingConditions": "通常のAT終了後はCZ間600G、AT間850G+α。リセット時とAT駆け抜け時はCZ間250G・AT間600G+α。上位CZ失敗後はAT間250G+α。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1166/38720/",
+        "https://nana-press.com/kaiseki/machine/1166/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ化物語",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ゲーム数天井600Gへ短縮。変更後50G消化でモードBのHIGHへ移行濃厚。",
+      "carryover": "据え置きではゲーム数の進行、内部状態、解呪連モード、有利区間を引き継ぐ。",
+      "ceilingConditions": "リセット後600GでATと倍倍チャンス。通常上限はこの記録では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1055/33280/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ北斗の拳転生の章2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井が最大1280あべしに短縮。内部あべしのランダム加算とモード・高確等の再抽選がある。",
+      "carryover": "据え置きでは天井の進行、内部状態、モード、あべし数、伝承モードを引き継ぐ。",
+      "ceilingConditions": "リセット時最大1280あべしでAT。あべしは実ゲーム数とは異なり、ランプG数をそのまま引かない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1059/33026/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ攻殻機動隊",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "CZ天井は最大350G+α、AT天井は699Gに短縮。殲滅ポイント加算等もある。",
+      "carryover": "電源OFF/ONでは天井G数・モード・内部状態・殲滅ポイント・殲滅テーブルを引き継ぐ。",
+      "ceilingConditions": "通常のCZ天井は550G+α、AT天井は999G。設定変更後はCZ350G+α・AT699G。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4659/1/112778"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ新鬼武者3",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "周期天井は最大4周期に短縮、初回周期は最大222BP。",
+      "carryover": "据え置きでは天井進行・内部状態・モード・G数・バッサリポイント・周期・有利区間を引き継ぐ。",
+      "ceilingConditions": "ゲーム数天井1000G+αは設定変更でも変わらない。短縮対象は周期天井。初回最大222BP、2周期目以降は最大666BP。G数・BP・周期を分ける。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1015/31931/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ東京リベンジャーズ",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井900Gに短縮。モードと初当たりのAT期待度が優遇され、初回規定ポイント200pt。",
+      "carryover": "据え置きは各進行・蓄積・モードを引き継ぐ。液晶は0G/0pt/1周期目となり、表示だけでは内部持越しを判断できない。",
+      "ceilingConditions": "変更後ゲーム数天井900G。通常条件・スルー条件の上限はこの記録では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1014/31681/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ獣王",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "最大599Gへ天井短縮。サバ連に入るまで短縮が続き、SC単発終了でも継続する。",
+      "carryover": "据え置きは天井の進行・内部状態・有利区間を引き継ぐ。",
+      "ceilingConditions": "通常最大999G、リセット後サバ連まで最大599G。SC/BIG/REGのいずれかに当選。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1232/39331/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ甲鉄城のカバネリ海門(うなと)決戦",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ゲーム数天井が596G、周期天井が最大4周期に短縮。",
+      "carryover": "据え置きでは天井の進行と内部状態・有利区間を引き継ぐ。",
+      "ceilingConditions": "リセット時596Gまたは最大4周期でエピソードボーナス、その後ST濃厚。通常条件の上限はこの記録では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1097/35407/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ秘宝伝",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ゲーム数天井が499G+αに短縮。",
+      "carryover": "据え置きはゲーム数・ポイント・伝説モードを引き継ぐ。",
+      "ceilingConditions": "設定変更後499G+α。ポイントとゲーム数は別々に扱う。通常時上限は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1074/33804/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロスーパーブラックジャック",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "BIG間天井が通常999G+αから設定変更後666G+αへ短縮。",
+      "carryover": "電源OFF/ONでは天井G数・スイカ回数・内部状態を引き継ぐ。",
+      "ceilingConditions": "BIG間999G+αでBIG。設定変更後は666G+α。通常はREG4連続後の次回ボーナスがBIG。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/vpage/2669/2"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロスーパーリオエース2",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス間500G+α、4スルー後5回目BIGでAT。リバースポイント初期値とハワードゲーム移行が優遇。",
+      "carryover": "据え置きは天井・内部状態・ハワードカウンター・リバースポイントを引き継ぐ。",
+      "ceilingConditions": "ゲーム数とボーナススルー回数の天井を区別。通常時上限は今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1143/36739/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロパリピ孔明",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス間天井428Gへ短縮し、無中生有ポイントの初期値に優遇がある。",
+      "carryover": "据え置きでは天井・ゲーム数・内部状態/モード・ステージチェンジ回数を引き継ぐ。表示は0G/0回になる場合があり内部と区別する。",
+      "ceilingConditions": "ボーナス間天井は通常1009G、変更後428G。CZ間天井とは別。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1222/39293/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロモンキーターンv",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ゲーム数天井495G+α、周期天井4周期、激走チャージ間81G+αに短縮。非有利区間のレア小役によるモード優遇あり。",
+      "carryover": "据え置きはゲーム数・周期・激走ポイント・状態を持ち越す。液晶は0G・0pt・1周期表示でも内部持越しがある。",
+      "ceilingConditions": "変更後の各天井を区別。通常時の上限値は今回この項目では未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/644/18025/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ北斗の拳",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "設定変更後は天井が800G+αへ短縮。",
+      "carryover": "据え置きは天井とモードを持ち越す。朝一ステージは設定変更・据置とも同様で見た目だけの判別不可。",
+      "ceilingConditions": "変更後800G+α。通常上限は今回の参照項目では数値未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/514/13776/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ痛いのは嫌なので防御力に極振りしたいと思います。",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井450G+αまたは650G+α、内部G数ランダム加算。中段チェリーの抽選と設定変更時専用の極・直撃高確に恩恵がある。",
+      "carryover": "据え置きでは天井進行・内部状態・防御状態・有利区間を引き継ぐ。",
+      "ceilingConditions": "リセット後450G+αまたは650G+α。初当たりの単発が続く間は短縮を継続する。G数加算があるため液晶・ランプ数値の意味を区別する。通常最大天井はこの資料では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/764/21886/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロ頭文字d2nd",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井が一部で299G+αに短縮され、内部ゲーム数をランダム加算。LBランク・初回のLBシナリオにも優遇がある。",
+      "carryover": "据え置きでは天井進行・内部状態・LBモード・LBランク・有利区間を引き継ぐ。",
+      "ceilingConditions": "リセットで必ず299Gになるわけではない。加算後の内部G数とデータランプの実G数が一致しない場合がある。通常最大天井はこの資料では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/818/24492/"
+      ]
+    },
+    {
+      "machineId": "slot:スロットソードアートオンラインii",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "初回CZ間天井を実ゲーム数256G+αに短縮し、死銃モード移行を優遇する。",
+      "carryover": "据え置きでは天井・モード・有利区間を引き継ぐ。",
+      "ceilingConditions": "設定変更後の初回CZは実G数256G+α。液晶ポイントやAT間天井と同じ数値に扱わない。通常CZ天井はこの資料では不明。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1158/37244/"
+      ]
+    },
+    {
+      "machineId": "slot:パチスロかぐや様は告らせたい",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "ボーナス天井800G+α。通常Bの初期選択が優遇。",
+      "carryover": "据え置きは天井・内部状態・モードを引き継ぐ。",
+      "ceilingConditions": "通常はBIG後1100G+α・REG後900G+α。設定変更後800G+α。引き戻し等の短いモードを否定できず、ランプだけで最大天井までの距離を確定しない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/804/23724/"
+      ]
+    },
+    {
+      "machineId": "slot:マジカルハロウィン8",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "天井が最大600G+αに短縮され、100Gなどの振り分けもある。変更後天井の恩恵はART＋ストック2個。",
+      "carryover": "据え置きは天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "設定変更後は規定G数で詠唱チャレンジへ。通常上限・個別の振り分けは今回未確認。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/627/18066/"
+      ]
+    },
+    {
+      "machineId": "slot:戦国コレクション6",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "AT当選までの周期天井が通常最大6周期から設定変更後最大3周期へ短縮。",
+      "carryover": "電源OFF/ONではG数・周期・コレポイント・リプレイ回数・ガチャチケット・モード・裏モードを引き継ぐ。",
+      "ceilingConditions": "通常時999G+αまたは最大6周期でAT。設定変更後の周期天井は最大3周期。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/vpage/2779/1"
+      ]
+    },
+    {
+      "machineId": "slot:真打吉宗",
+      "snapshotCheckedAt": "2026-10-25",
+      "resetBenefits": "AT間天井1000G+αへ短縮。CZモードと夜回りポイントモードの高モード選択が優遇される。",
+      "carryover": "据え置きでは各蓄積・モードを引き継ぐ。朝一の夜回りカウンター表示は初期状態となるため内部と区別する。",
+      "ceilingConditions": "AT間は通常1500G、変更後1000G+αでAT。CZ周期とは別。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1124/36101/"
+      ]
+    }
+  ]
+}
