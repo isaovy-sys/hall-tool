@@ -4,9 +4,9 @@ Public, source-linked machine data for an on-device iPhone tool. No photographs,
 
 ## Current release
 
-- Schema: 1; revision: 1.
-- Knowledge snapshot: 2026-10-25 (not the date of a new web verification).
-- 63 machines, 10 maximum-ceiling comparison rules for 7 machines, and 53 conditional guidance records.
+- Schema: 1; revision: 2.
+- Knowledge snapshot: 2026-11-03 for six new records; existing records retain their original review dates.
+- 69 machines, 10 maximum-ceiling comparison rules for 7 machines, and 59 conditional guidance records. The six November additions use conditional benefit guidance; no new numerical ceiling comparisons are added.
 - Public analysis sources are linked per record. `verified` describes a prior public-source review, not manufacturer certification or a prediction of a machine's actual internal state.
 
 ## Publishing updates
