@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "revision": 1,
-  "knowledgeSnapshotDate": "2026-10-25",
+  "revision": 2,
+  "knowledgeSnapshotDate": "2026-11-03",
   "machines": [
     {
       "id": "slot:ltoloveるダークネス",
@@ -2922,6 +2922,272 @@
         "checkedAt": "2026-10-25",
         "reviewNote": "公開ページを確認した解析情報。メーカー公表仕様とは区別。独自のリセット判断ライン・期待値金額は登録しない。"
       }
+    },
+    {
+      "id": "slot:l聖闘士星矢黄金十二宮",
+      "name": "L聖闘士星矢 黄金十二宮",
+      "formalName": "L聖闘士星矢黄金十二宮TG",
+      "aliases": [
+        "L聖闘士星矢 黄金十二宮",
+        "L聖闘士星矢黄金十二宮TG",
+        "スマスロ聖闘士星矢 黄金十二宮"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:l聖闘士星矢黄金十二宮",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "L聖闘士星矢 黄金十二宮／型式 L聖闘士星矢黄金十二宮TG に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更ではナビ状態・幻魔ポイントを再抽選し、小宇宙ポイントを初期化する。",
+        "carryover": "電源OFF/ONではナビ状態・幻魔ポイントを持ち越す。小宇宙ポイントと火時計は初期表示でも内部で引き継ぐ。",
+        "resetBenefits": "設定変更後はCZ最大300G+α、AT最大900Gへ短縮。",
+        "ceilingConditions": "通常最大はCZ600G+α、AT1200G。最終決戦敗北・上位AT終了後も短縮があるため、直前状態の確認が必要。",
+        "observationRequirements": [
+          "CZ間とAT間の区別",
+          "直前の最終決戦・上位AT終了",
+          "内部ポイント"
+        ],
+        "unknowns": [
+          "ステージによるリセット判別",
+          "表示G数と内部計数の対応"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "L聖闘士星矢 黄金十二宮 設定変更・天井の公開解析",
+            "url": "https://hisshobon.com/machineinfo/185034/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lソードアートオンラインオルタナティブガンゲイルオンライン",
+      "name": "L ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+      "formalName": "Lガンゲイル・オンラインMD",
+      "aliases": [
+        "L ソードアート・オンライン オルタナティブ ガンゲイル・オンライン",
+        "Lガンゲイル・オンラインMD",
+        "Lガンゲイル・オンライン",
+        "スマスロ ガンゲイル・オンライン",
+        "ガンゲイル・オンライン"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:lソードアートオンラインオルタナティブガンゲイルオンライン",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "L ソードアート・オンライン オルタナティブ ガンゲイル・オンライン／型式 Lガンゲイル・オンラインMD に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更でゲーム数天井・ST間スルー・内部状態をリセットし、グレネード初期値を抽選する。",
+        "carryover": "据え置きではゲーム数天井・スルー回数・内部状態・グレネードカウンターを引き継ぐ。",
+        "resetBenefits": "ボーナス間天井300G+α、ST間3回目のボーナスでST以上。グレネード初期値は0〜5個。",
+        "ceilingConditions": "通常ボーナス間最大975G+α、ST間最大7回目のボーナス。ST駆け抜け後も3回目へ短縮。ボーナス間とST間を混同しない。",
+        "observationRequirements": [
+          "ボーナス間G数",
+          "ST間ボーナス回数",
+          "グレネードカウンター"
+        ],
+        "unknowns": [
+          "現在のモード・報酬レベル",
+          "ランプのクリア契機"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "L ソードアート・オンライン オルタナティブ ガンゲイル・オンライン 設定変更・天井の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1244/40099/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "title": "L ソードアート・オンライン オルタナティブ ガンゲイル・オンライン 設定変更・天井の公開解析",
+            "url": "https://hisshobon.com/machineinfo/183158/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:l牙狼闇を照らす者",
+      "name": "L牙狼 闇を照らす者",
+      "formalName": "L牙狼闇を照らす者CJ",
+      "aliases": [
+        "L牙狼 闇を照らす者",
+        "L牙狼闇を照らす者CJ",
+        "スマスロ牙狼 闇を照らす者"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:l牙狼闇を照らす者",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "L牙狼 闇を照らす者／型式 L牙狼闇を照らす者CJ に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更で天井G数を初期化し、モード・内部状態を再抽選する。",
+        "carryover": "電源OFF/ONでは天井G数・モード・内部状態を持ち越す。",
+        "resetBenefits": "設定変更後はボーナス最大天井が777Gに短縮される。",
+        "ceilingConditions": "通常最大999Gで初当たりボーナス。AT終了後は天国111G、SGB後は通常C以上で555G以下などの別条件がある。最大値だけで現在状態を決めない。",
+        "observationRequirements": [
+          "ボーナス間G数",
+          "AT終了後かSGB後か",
+          "モード示唆"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "データランプの計数区間"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "L牙狼 闇を照らす者 設定変更・天井の公開解析",
+            "url": "https://hisshobon.com/machineinfo/177618/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "title": "L牙狼 闇を照らす者 設定変更・天井の公開解析",
+            "url": "https://hisshobon.com/machineinfo/177635/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:lパチスロゴジラ対エヴァンゲリオン2",
+      "name": "Lパチスロ ゴジラ対エヴァンゲリオン2",
+      "formalName": "Lゴジラ対エヴァンゲリオン2S",
+      "aliases": [
+        "Lパチスロ ゴジラ対エヴァンゲリオン2",
+        "Lゴジラ対エヴァンゲリオン2S",
+        "Lゴジラ対エヴァンゲリオン2",
+        "ゴジエヴァ2",
+        "Lパチスロ ゴジラ対エヴァンゲリオン 2"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:lパチスロゴジラ対エヴァンゲリオン2",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "Lパチスロ ゴジラ対エヴァンゲリオン2／型式 Lゴジラ対エヴァンゲリオン2S に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更で天井G数・G因子ポイントを初期化し、内部状態を再抽選する。",
+        "carryover": "電源OFF/ONでは天井G数・内部状態・G因子ポイントを引き継ぐ。",
+        "resetBenefits": "ボーナス間天井400G+α、AT間750G+αへ短縮。ただしAT間到達の恩恵は次回ボーナスでAT濃厚。",
+        "ceilingConditions": "通常ボーナス間850G+αでボーナス、AT間1500G+α到達後の次回ボーナスでAT濃厚。AT間到達即ATとして残G比較しない。",
+        "observationRequirements": [
+          "ボーナス間とAT間のG数",
+          "G因子ポイント",
+          "次回ボーナスの状態"
+        ],
+        "unknowns": [
+          "小役履歴の電源断時挙動",
+          "現在の内部状態"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "Lパチスロ ゴジラ対エヴァンゲリオン2 設定変更・天井の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1247/39896/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スマスロラグナドール",
+      "name": "スマスロ ラグナドール",
+      "formalName": "LラグナドールZI",
+      "aliases": [
+        "スマスロ ラグナドール",
+        "LラグナドールZI",
+        "Lラグナドール",
+        "ラグナドール"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:スマスロラグナドール",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "スマスロ ラグナドール／型式 LラグナドールZI に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更でCZ間の天井進行と内部状態を初期化し、AT間天井を短縮する。",
+        "carryover": "電源OFF/ONではAT間天井・CZ間天井・内部状態を引き継ぐ。",
+        "resetBenefits": "AT間天井500G+αへ短縮。初回CZは約50%で玄武以上、3回目以降は朱雀が濃厚とする解析。",
+        "ceilingConditions": "通常CZ間500G+α、AT間999G+α。AT間はCZ中を除く通常ゲームのみ。サブ液晶の遊技情報で確認する。",
+        "observationRequirements": [
+          "CZを含まないAT間G数",
+          "CZ回数と対戦相手",
+          "持ち越す状態"
+        ],
+        "unknowns": [
+          "有利区間の設定変更時挙動",
+          "現在の内部状態"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "スマスロ ラグナドール 設定変更・天井の公開解析",
+            "url": "https://1geki.jp/slot/l_ragnador/3/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          },
+          {
+            "title": "スマスロ ラグナドール 設定変更・天井の公開解析",
+            "url": "https://nana-press.com/kaiseki/machine/1250/39821/",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
+    },
+    {
+      "id": "slot:スロットvivy",
+      "name": "スロット Vivy -Fluorite Eye’s Song-",
+      "formalName": "L/Vivy/A5",
+      "aliases": [
+        "スロット Vivy -Fluorite Eye’s Song-",
+        "L/Vivy/A5",
+        "スロットVivy",
+        "L Vivy",
+        "Vivy",
+        "ヴィヴィ"
+      ],
+      "identityStatus": "confirmed",
+      "knowledge": {
+        "machineId": "slot:スロットvivy",
+        "status": "verified",
+        "evidenceLevel": "analysis",
+        "generation": "スロット Vivy -Fluorite Eye’s Song-／型式 L/Vivy/A5 に限定。旧作や別型式へ流用しない。",
+        "resetSpec": "設定変更で天井ゲーム数・周期・ポイントを初期化し、内部状態を再抽選する。",
+        "carryover": "電源OFF/ONでは天井ゲーム数・周期・ポイント・内部状態を持ち越す。",
+        "resetBenefits": "設定変更後のAT間天井を500G+αへ短縮する。",
+        "ceilingConditions": "通常AT間800G+α。周期・ポイントによる当選もあるため、ゲーム数だけで残る恩恵を決めない。",
+        "observationRequirements": [
+          "AT間G数",
+          "周期・ポイント",
+          "液晶モード示唆"
+        ],
+        "unknowns": [
+          "現在の内部モード",
+          "ランプ表示のクリア条件"
+        ],
+        "checkedAt": "2026-11-03",
+        "reviewNote": "公開解析を確認。メーカー確定仕様・実測確率とは区別。最大天井だけの新規数値比較ルールは設けていない。",
+        "sources": [
+          {
+            "title": "スロット Vivy -Fluorite Eye’s Song- 設定変更・天井の公開解析",
+            "url": "https://p.hisshobon.jp/machine/4842/1/4",
+            "type": "analysis",
+            "scope": "reset_and_carryover"
+          }
+        ]
+      }
     }
   ],
   "comparisonRules": [
@@ -3585,6 +3851,69 @@
       "ceilingConditions": "AT間は通常1500G、変更後1000G+αでAT。CZ周期とは別。",
       "sourceURLs": [
         "https://nana-press.com/kaiseki/machine/1124/36101/"
+      ]
+    },
+    {
+      "machineId": "slot:l聖闘士星矢黄金十二宮",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "設定変更後はCZ最大300G+α、AT最大900Gへ短縮。",
+      "carryover": "電源OFF/ONではナビ状態・幻魔ポイントを持ち越す。小宇宙ポイントと火時計は初期表示でも内部で引き継ぐ。",
+      "ceilingConditions": "通常最大はCZ600G+α、AT1200G。最終決戦敗北・上位AT終了後も短縮があるため、直前状態の確認が必要。",
+      "sourceURLs": [
+        "https://hisshobon.com/machineinfo/185034/"
+      ]
+    },
+    {
+      "machineId": "slot:lソードアートオンラインオルタナティブガンゲイルオンライン",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "ボーナス間天井300G+α、ST間3回目のボーナスでST以上。グレネード初期値は0〜5個。",
+      "carryover": "据え置きではゲーム数天井・スルー回数・内部状態・グレネードカウンターを引き継ぐ。",
+      "ceilingConditions": "通常ボーナス間最大975G+α、ST間最大7回目のボーナス。ST駆け抜け後も3回目へ短縮。ボーナス間とST間を混同しない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1244/40099/",
+        "https://hisshobon.com/machineinfo/183158/"
+      ]
+    },
+    {
+      "machineId": "slot:l牙狼闇を照らす者",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "設定変更後はボーナス最大天井が777Gに短縮される。",
+      "carryover": "電源OFF/ONでは天井G数・モード・内部状態を持ち越す。",
+      "ceilingConditions": "通常最大999Gで初当たりボーナス。AT終了後は天国111G、SGB後は通常C以上で555G以下などの別条件がある。最大値だけで現在状態を決めない。",
+      "sourceURLs": [
+        "https://hisshobon.com/machineinfo/177618/",
+        "https://hisshobon.com/machineinfo/177635/"
+      ]
+    },
+    {
+      "machineId": "slot:lパチスロゴジラ対エヴァンゲリオン2",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "ボーナス間天井400G+α、AT間750G+αへ短縮。ただしAT間到達の恩恵は次回ボーナスでAT濃厚。",
+      "carryover": "電源OFF/ONでは天井G数・内部状態・G因子ポイントを引き継ぐ。",
+      "ceilingConditions": "通常ボーナス間850G+αでボーナス、AT間1500G+α到達後の次回ボーナスでAT濃厚。AT間到達即ATとして残G比較しない。",
+      "sourceURLs": [
+        "https://nana-press.com/kaiseki/machine/1247/39896/"
+      ]
+    },
+    {
+      "machineId": "slot:スマスロラグナドール",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "AT間天井500G+αへ短縮。初回CZは約50%で玄武以上、3回目以降は朱雀が濃厚とする解析。",
+      "carryover": "電源OFF/ONではAT間天井・CZ間天井・内部状態を引き継ぐ。",
+      "ceilingConditions": "通常CZ間500G+α、AT間999G+α。AT間はCZ中を除く通常ゲームのみ。サブ液晶の遊技情報で確認する。",
+      "sourceURLs": [
+        "https://1geki.jp/slot/l_ragnador/3/",
+        "https://nana-press.com/kaiseki/machine/1250/39821/"
+      ]
+    },
+    {
+      "machineId": "slot:スロットvivy",
+      "snapshotCheckedAt": "2026-11-03",
+      "resetBenefits": "設定変更後のAT間天井を500G+αへ短縮する。",
+      "carryover": "電源OFF/ONでは天井ゲーム数・周期・ポイント・内部状態を持ち越す。",
+      "ceilingConditions": "通常AT間800G+α。周期・ポイントによる当選もあるため、ゲーム数だけで残る恩恵を決めない。",
+      "sourceURLs": [
+        "https://p.hisshobon.jp/machine/4842/1/4"
       ]
     }
   ]
